@@ -1,0 +1,81 @@
+/* Navbar */
+.navbar {
+    height: 60px;
+    @include transition(all 0.3s ease-in-out);
+    @include box-shadow(0px 1px 8px 0px rgba($mine-shaft, 0.2));
+    margin-top: -300px;
+    background: $white;
+
+    &.whiteHeader {
+        margin-top: 0;
+    }
+
+    &.whiteHeader{
+        ul li a {
+            color: $scorpion;
+        }
+        .navbar-header .navbar-brand {
+            color: $scorpion;
+        }        
+    }
+
+    .navbar-toggle {
+        color: $scorpion!important;
+    }
+
+    .navbar-header {
+        .navbar-brand {
+            text-decoration: none;
+            color: $white;
+            height: 60px;
+            padding: 20px 15px;  
+        }
+        button {
+            color: $white;
+        }
+    }
+
+    ul li {
+        a {
+            color: $white;
+            background: transparent;
+
+            &:hover,
+            &:focus,
+            &:active {
+                background: transparent;
+            }
+        }
+
+        &.active a {
+            background: transparent;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .navbar-nav > li > a {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    
+    .navbar ul li.active a {
+        background: transparent;
+        border-top: 2px solid #22BAA0;
+        padding-top: 18px;
+    }
+    
+    .navbar.whiteHeader ul li.active a {
+        color: #333;
+    }
+}
+
+@media (max-width: 768px) {
+    #navbar {
+        background: #fff;
+        -webkit-box-shadow: 0px 1px 8px 0px rgba(51, 51, 51, 0.2);
+        -moz-box-shadow: 0px 1px 8px 0px rgba(51, 51, 51, 0.2);
+        box-shadow: 0px 1px 8px 0px rgba(51, 51, 51, 0.2);
+    }
+}
+

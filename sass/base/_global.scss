@@ -1,0 +1,48 @@
+/* Global Styles */
+html {
+    height: 100%!important;
+    position: relative;
+}
+
+body {
+    position: relative;
+    height: 100%!important;
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    color: $river-bed;
+    overflow-x: hidden;
+}
+
+p {
+    display: block;
+    margin: 0px 0px 10px 0px;
+}
+
+a {
+    &:hover,
+    &:active,
+    &:focus {
+        outline: none!important;
+    } 
+}
+
+
+
+/*-------------------------------------------------------*/
+.pace {
+    .pace-progress {
+        background: $mountain-meadow;
+    }
+
+    .pace-progress-inner {
+        box-shadow: 0 0 10px $mountain-meadow, 
+                    0 0 5px $mountain-meadow;
+    }
+
+    .pace-activity {
+        border-top-color: $mountain-meadow;
+        border-left-color: $mountain-meadow;
+        margin-top: 60px;
+    }
+}
