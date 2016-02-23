@@ -29,3 +29,39 @@
 	-moz-box-shadow: $shadow;
 	box-shadow: $shadow;
 }
+
+//Transform
+@mixin transform($arg) {
+  @-webkit-transform: $arg;
+  @-ms-transform: $arg;
+  @-o-transform: $arg;
+  transform: $arg;
+}
+
+//Keyframes
+@mixin keyframes($animation-name) {
+  @-webkit-keyframes #{$animation-name} {
+    @content;
+  }
+  @-moz-keyframes #{$animation-name} {
+    @content;
+  }
+  @-ms-keyframes #{$animation-name} {
+    @content;
+  }
+  @-o-keyframes #{$animation-name} {
+    @content;
+  }
+  @keyframes #{$animation-name} {
+    @content;
+  }
+}
+
+//Animation
+@mixin animation($arg...) {
+  -webkit-animation: $arg;
+  -moz-animation: $arg;
+  -ms-animation: $arg;
+  -o-animation: $arg;
+  animation: $arg;
+}

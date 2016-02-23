@@ -89,3 +89,31 @@ label {
         }
     }
 }
+
+//Home
+.home-text {
+    text-align: center;
+
+    h1 {
+        font-size: 50px;
+        font-weight: $light;
+    }
+
+    p {
+        font-size: 18px;
+    }
+}
+
+.scroller {
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .home-text h1 {
+        font-size: 30px;
+    }
+    
+    .home-text p {
+        font-size: 16px;
+    }
+}
