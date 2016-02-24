@@ -13,7 +13,6 @@
     }
 }
 
-
 //Transition
 @mixin transition($args...) {
   -webkit-transition: $args;
@@ -27,6 +26,8 @@
 @mixin box-shadow($shadow...) {
 	-webkit-box-shadow: $shadow;
 	-moz-box-shadow: $shadow;
+  -ms-box-shadow: $shadow;
+  -o-box-shadow: $shadow;
 	box-shadow: $shadow;
 }
 

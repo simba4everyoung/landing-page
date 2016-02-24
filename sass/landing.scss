@@ -1,20 +1,24 @@
 //Base
 @import "base/swatch";
-@import "base/typography";
 @import "base/margins";
 @import "base/paddings";
 @import "base/icons";
 
 //Custom Mixins
 @import "custom/mixins";
+@import "custom/media";
 
 //Global
+@import "base/typography";
 @import "base/global";
 
 //Components
 @import "components/buttons";
 @import "components/forms";
 @import "components/navbar";
+@import "components/footer";
 
 //Partials
 @import "partials/home";
+@import "partials/features";
+@import "partials/contact";
