@@ -1,54 +1,56 @@
 /* Navbar */
 .navbar {
-    height: 60px;
-    @include transition(all 0.3s ease-in-out);
-    @include box-shadow(0px 1px 8px 0px rgba($mine-shaft, 0.2));
-    margin-top: -300px;
-    background: $white;
+    color: $white;
 
     &.whiteHeader {
-        margin-top: 0;
-    }
-
-    &.whiteHeader{
-        ul li a {
-            color: $scorpion;
-        }
-        .navbar-header .navbar-brand {
-            color: $scorpion;
-        }        
-    }
-
-    .navbar-toggle {
-        color: $scorpion!important;
+        background: $white;
+        @include box-shadow(0px 1px 8px 0px rgba($mine-shaft, 0.2));
+        @include transition(all 0.3s ease-in-out);
+        
+        .navbar-header {
+            button {
+                color: $scorpion;
+            }
+        }            
     }
 
     .navbar-header {
+        @include flex;
+        @include align-items(center);
+        padding: 10px 0;
+
         .navbar-brand {
             text-decoration: none;
             color: $white;
-            height: 60px;
-            padding: 20px 15px;  
+            @include flex;
+            @include align-items(center);
+            
+            img {
+                height: 30px;
+            }  
         }
         button {
+            margin-left: auto;
             color: $white;
         }
-    }
+    }    
+}
+
+#navbar {
+    background: $white;
+    @include box-shadow(0px 1px 8px 0px rgba($mine-shaft, 0.2));
 
     ul li {
         a {
-            color: $white;
+            color: $scorpion;
             background: transparent;
+            padding: 15px;
 
             &:hover,
             &:focus,
             &:active {
-                background: transparent;
+                border-left: solid 2px $mountain-meadow;
             }
-        }
-
-        &.active a {
-            background: transparent;
         }
     }
 }
@@ -69,13 +71,6 @@
                 color: $mine-shaft;
             }
         }
-    }
-}
-
-@include respond-max(768px) {
-    #navbar {
-        background: $white;
-        @include box-shadow(0px 1px 8px 0px rgba($mine-shaft, 0.2));
     }
 }
 

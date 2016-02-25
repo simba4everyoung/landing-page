@@ -66,3 +66,29 @@
   -o-animation: $arg;
   animation: $arg;
 }
+
+//Flexbox
+@mixin flex {
+  display: -webkit-flex;  /*safari*/
+  display: flex;
+}
+
+@mixin flex-inline {
+  display: -webkit-inline-flex; /*safari*/
+  display: inline-flex;
+}
+
+@mixin flex-direction($arg) {
+  -webkit-flex-direction: $arg;
+  flex-direction: $arg;
+}
+
+@mixin align-items($arg) {      
+  -webkit-align-items: $arg;
+  align-items: $arg;
+}
+
+@mixin justify-content($arg) {
+  -webkit-justify-content: $arg;
+  justify-content: $arg;
+}
