@@ -2,7 +2,6 @@
 @import "base/swatch";
 @import "base/margins";
 @import "base/paddings";
-@import "base/icons";
 
 //Custom Mixins
 @import "custom/mixins";
@@ -14,6 +13,7 @@
 
 //Components
 @import "components/buttons";
+@import "components/sections";
 @import "components/forms";
 @import "components/navbar";
 @import "components/footer";
@@ -21,5 +21,6 @@
 //Partials
 @import "partials/home";
 @import "partials/concepts";
-@import "partials/features";
+@import "partials/services";
+@import "partials/testimonials";
 @import "partials/contact";

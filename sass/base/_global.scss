@@ -24,23 +24,3 @@ a {
         outline: none!important;
     } 
 }
-
-
-
-/*-------------------------------------------------------*/
-.pace {
-    .pace-progress {
-        background: $mountain-meadow;
-    }
-
-    .pace-progress-inner {
-        box-shadow: 0 0 10px $mountain-meadow, 
-                    0 0 5px $mountain-meadow;
-    }
-
-    .pace-activity {
-        border-top-color: $mountain-meadow;
-        border-left-color: $mountain-meadow;
-        margin-top: 60px;
-    }
-}

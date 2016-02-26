@@ -53,7 +53,7 @@ h5 {
 h6 {
     font-family: $font-pri;
     font-size: 16px;
-    font-weight: $normal;
+    font-weight: $light;
 }
 
 p {
@@ -63,6 +63,16 @@ p {
     line-height: 2;
     font-style: normal;
     white-space: normal;
+    text-align: justify;
+}
+
+//Tool
+.uppercase {
+    text-transform: uppercase;
+}
+
+.lowercase {
+    text-transform: lowercase;
 }
 
 //Forms
@@ -122,32 +132,21 @@ label {
 
 //How it works
 .concepts {
-    h2 {
+    .concept-caption {
         text-align: center;
-    }
-    h4 {
         line-height: 1.4;
     }
 }
 
-//Features
-.feature-list {
-    .col-sm-4 {
-        text-align: center;
-    }
-}
-
-.feature-icon {
+//Services
+.service-icon {
     font-size: 35px;
     text-align: center;
     line-height: 100px;
 }
 
-.tabs-style-linebox .content-wrap section p {
-    font-size: 16px;
-}
-
-#section-3 .carousel .item {
+//Testimonial
+.testimonial .carousel .item {
     text-align: center;
 
     p {
