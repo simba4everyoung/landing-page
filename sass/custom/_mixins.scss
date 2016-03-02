@@ -83,6 +83,11 @@
   flex-direction: $arg;
 }
 
+@mixin flex-wrap($arg) {
+  -webkit-flex-wrap: $arg;
+  flex-wrap: $arg;
+}
+
 @mixin align-items($arg) {      
   -webkit-align-items: $arg;
   align-items: $arg;

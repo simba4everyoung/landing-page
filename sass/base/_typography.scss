@@ -64,6 +64,10 @@ p {
     font-style: normal;
     white-space: normal;
     text-align: justify;
+
+    footer & {
+        font-size: 14px;
+    }
 }
 
 //Tool
