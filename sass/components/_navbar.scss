@@ -37,14 +37,21 @@
 }
 
 #navbar {
-    background: $white;
-    @include box-shadow(0px 1px 8px 0px rgba($mine-shaft, 0.2));
+    padding: 15px 0 10px 0;
 
     ul li {
         a {
-            color: $scorpion;
+            color: $white;
             background: transparent;
             padding: 15px;
+
+            .whiteHeader & {
+                color: $scorpion;
+            }
+
+            @include respond-max(767px) {
+                color: $scorpion;
+            }
 
             &:hover,
             &:focus,
@@ -53,7 +60,13 @@
             }
         }
     }
+
+    @include respond-max(767px) {
+        background: $white;
+        @include box-shadow(0px 1px 8px 0px rgba($mine-shaft, 0.2));
+    }
 }
+
 
 @include respond-min(768px) {
     .navbar-nav{ 
