@@ -97,3 +97,10 @@
   -webkit-justify-content: $arg;
   justify-content: $arg;
 }
+
+//turn off select field apperance
+@mixin appearance($arg) {
+  -webkit-appearance: $arg;
+  -moz-appearance: $arg;
+  appearance: $arg;
+}
