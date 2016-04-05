@@ -16,21 +16,21 @@
 }
 
 .btn-primary {
-    @include btn-base($blue-marguerite, $white);
+    @include btn-base($azure-radiance, $white);
 }
 
 .btn-success {
-    @include btn-base($mountain-meadow, $white);
+    @include btn-base($green, $white);
 }
 
 .btn-danger {
-    @include btn-base($carnation, $white);
+    @include btn-base($red-orange, $white);
 }
 
 .btn-info {
-    @include btn-base($java, $white);
+    @include btn-base($pizazz, $white);
 }
 
 .btn-warning {
-    @include btn-base($cream-can, $white);
+    @include btn-base($supernova, $white);
 }
