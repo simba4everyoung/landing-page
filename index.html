@@ -34,16 +34,92 @@
     </head>
 
     <body data-spy="scroll" data-target="#header">
+        <div id="icon-container"></div>
+        <nav id="mobile-nav">
+            <div class="mn-panel-container">
+                <div class="mn-panel">
+                    <div class="mn-close">
+                        <span class="svg-container icon-cross">
+                            <svg class="icon">
+                                <use xlink:href="#icon-cross">
+                            </svg>
+                        </span>
+                        <span>Close Menu</span>
+                    </div>
+                    <ul class="mn-list">
+                        <li>
+                            <a href="#home">
+                                <span class="svg-container icon-arrow-left">
+                                    <svg class="icon">
+                                        <use xlink:href="#icon-arrow-left">
+                                    </svg>
+                                </span>
+                                <span>Home</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#features">
+                                <span class="svg-container icon-arrow-left">
+                                    <svg class="icon">
+                                        <use xlink:href="#icon-arrow-left">
+                                    </svg>
+                                </span>
+                                <span>How it works</span>
+                            </a>
+                        <li>
+                            <a href="#pricing">
+                                <span class="svg-container icon-arrow-left">
+                                    <svg class="icon">
+                                        <use xlink:href="#icon-arrow-left">
+                                    </svg>
+                                </span>
+                                <span>About</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#contact">
+                                <span class="svg-container icon-arrow-left">
+                                    <svg class="icon">
+                                        <use xlink:href="#icon-arrow-left">
+                                    </svg>
+                                </span>
+                                <span>Contact</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="svg-container icon-arrow-left">
+                                    <svg class="icon">
+                                        <use xlink:href="#icon-arrow-left">
+                                    </svg>
+                                </span>
+                                <span>Become a Provider</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="svg-container icon-arrow-left">
+                                    <svg class="icon">
+                                        <use xlink:href="#icon-arrow-left">
+                                    </svg>
+                                </span>
+                                <span>Sign in</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
         <nav id="header" class="navbar navbar-fixed-top">
             <div class="container">
                 <div class="navbar-header">
                     <a class="navbar-brand" href="#"><img src="images/logo.png" alt="logo"/></a>
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <button type="button" class="mn-toggle" aria-controls="navbar">
                         <span class="sr-only">Toggle navigation</span>
                         <span class="fa fa-bars burger"></span>
                     </button>
                 </div>
-                <div id="navbar" class="navbar-collapse collapse navbar-right">
+                <div id="navbar" class="navbar-right">
                     <ul class="nav navbar-nav">
                         <li><a href="#home">Home</a></li>
                         <li><a href="#features">How it works</a></li>
@@ -55,262 +131,267 @@
                 </div>
             </div>
         </nav>
-        
-        <div class="home" id="home">
-            <div class="overlay"></div>
-            <div class="container">
-                <div class="row">
-                    <div class="home-text">
-                        <h1 class="wow fadeInDown" data-wow-delay="1.5s" data-wow-duration="1.5s" data-wow-offset="10">
-                            Find your hero! Or be the hero!
-                        </h1>
-                        <h3 class="lead wow fadeInDown" data-wow-delay="2s" data-wow-duration="1.5s" data-wow-offset="10">
-                            Make a meal, capture a moment, recycle your stuff &amp; more and more...
-                        </h3>
-                        <div class="btn-container">
-                            <a href="#" target="_blank" class="btn btn-default btn-rounded btn-lg wow fadeInUp" data-wow-delay="2.5s" data-wow-duration="1.5s" data-wow-offset="10">
-                            Become a Service Provider
-                            </a>
-                            <a href="#" class="btn btn-primary btn-rounded btn-lg wow fadeInUp" data-wow-delay="2.5s" data-wow-duration="1.5s" data-wow-offset="10">
-                                Sign In
-                            </a>
+        <div class="page-wrapper">
+            
+            <div class="home" id="home">
+                <div class="overlay"></div>
+                <div class="container">
+                    <div class="row">
+                        <div class="home-text">
+                            <h1 class="wow fadeInDown" data-wow-delay="1.5s" data-wow-duration="1.5s" data-wow-offset="10">
+                                Find your hero! Or be the hero!
+                            </h1>
+                            <h3 class="lead wow fadeInDown" data-wow-delay="2s" data-wow-duration="1.5s" data-wow-offset="10">
+                                Make a meal, capture a moment, recycle your stuff &amp; more and more...
+                            </h3>
+                            <div class="btn-container">
+                                <a href="#" target="_blank" class="btn btn-default btn-rounded btn-lg wow fadeInUp" data-wow-delay="2.5s" data-wow-duration="1.5s" data-wow-offset="10">
+                                Become a Service Provider
+                                </a>
+                                <a href="#" class="btn btn-primary btn-rounded btn-lg wow fadeInUp" data-wow-delay="2.5s" data-wow-duration="1.5s" data-wow-offset="10">
+                                    Sign In
+                                </a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="scroller">
-                        <h6>Learn More</h6>
-                        <i class="fa fa-angle-down wheel"></i>
-                        <!--div class="mouse"><div class="wheel"></div></div-->
+                        <div class="scroller">
+                            <h6>Learn More</h6>
+                            <i class="fa fa-angle-down wheel"></i>
+                            <!--div class="mouse"><div class="wheel"></div></div-->
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <!--How it works-->
-        <section class="section-title concepts">
-            <div class="container">
-                <div class="row">
-                    <h6 class="uppercase">What we do and why we do it</h6>
-                    <h2>What is ecolulu?</h2>
-                </div>
-            </div>
-        </section>
-        
-        <section class="concepts">
-            <div class="container">
-                <div class="row reverse">
-                    <div class="col-sm-4 col-md-5 wow fadeInRight" data-wow-delay="0.5s" data-wow-duration="1.5s" data-wow-offset="10">
-                        <img src="images/about-ecolulu-img-01.png" class="iphone-img" alt="">
-                    </div>
-                    <div class="col-sm-8 col-md-7 wow fadeInLeft" data-wow-delay="0.5s" data-wow-duration="1.5s" data-wow-offset="10">
-                        <h6 class="uppercase">help others</h6>
-                        <h2 class="concept-caption">
-                            It's having a talent and putting it to good use.
-                        </h2>
-                        <p>
-                            At ecolulu, we know there are hidden gems out there, people with amazing skills that aren't being put to good use. We want you to succeed in making your dream job your real job.
-                        </p>
+            <!--How it works-->
+            <section class="section-title concepts">
+                <div class="container">
+                    <div class="row">
+                        <h6 class="uppercase">What we do and why we do it</h6>
+                        <h2>What is ecolulu?</h2>
                     </div>
                 </div>
-            </div>
-        </section>
-        <section class="concepts">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-4 col-md-5 wow fadeInLeft" data-wow-delay="0.5s" data-wow-duration="1.5s" data-wow-offset="10">
-                        <img src="images/about-ecolulu-img-02.png" class="iphone-img" alt="">
-                    </div>
-                    <div class="col-sm-8 col-md-7 wow fadeInRight" data-wow-delay="0.5s" data-wow-duration="1.5s" data-wow-offset="10">
-                        <h6 class="uppercase">find help</h6>
-                        <h2 class="concept-caption">
-                            It's having a need and finding someone to fill it.
-                        </h2>
-                        <p>
-                            Professional help is expensive and often out of reach on a budget. What if there were non-professional but skilled people out there willing to do your job for less? You get a great deal and they get the experience they need to make that job a career!
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="concepts">
-            <div class="container">
-                <div class="row reverse">
-                    <div class="col-sm-4 col-md-6 wow fadeInRight" data-wow-delay="0.5s" data-wow-duration="1.5s" data-wow-offset="10">
-                        <img src="images/about-ecolulu-img-03.png" class="iphone-img" alt="">
-                    </div>
-                    <div class="col-sm-8 col-md-6 wow fadeInLeft" data-wow-delay="0.5s" data-wow-duration="1.5s" data-wow-offset="10">
-                        <h6 class="uppercase">realize your dream</h6>
-                        <h2 class="concept-caption">
-                            It's building up your skills and helping realize your dream.
-                        </h2>
-                        <p>
-                            Get connected with people looking for someone like you. Negotiate your own rates, choose what services you offer, and pick the schedule that suits you and them. With each completed job, you'll improve your skills, have real experience, and be better prepared to reach your career goals.
-                        </p>
+            </section>
+            
+            <section class="concepts">
+                <div class="container">
+                    <div class="row reverse">
+                        <div class="col-sm-4 col-md-5 wow fadeInRight" data-wow-delay="0.5s" data-wow-duration="1.5s" data-wow-offset="10">
+                            <img src="images/about-ecolulu-img-01.png" class="iphone-img" alt="">
+                        </div>
+                        <div class="col-sm-8 col-md-7 wow fadeInLeft" data-wow-delay="0.5s" data-wow-duration="1.5s" data-wow-offset="10">
+                            <h6 class="uppercase">help others</h6>
+                            <h2 class="concept-caption">
+                                It's having a talent and putting it to good use.
+                            </h2>
+                            <p>
+                                At ecolulu, we know there are hidden gems out there, people with amazing skills that aren't being put to good use. We want you to succeed in making your dream job your real job.
+                            </p>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <section class="concepts">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-4 col-md-6 wow fadeInRight" data-wow-delay="0.5s" data-wow-duration="1.5s" data-wow-offset="10">
-                        <img src="images/about-ecolulu-img-04.png" class="iphone-img" alt="">
-                    </div>
-                    <div class="col-sm-8 col-md-6 wow fadeInLeft" data-wow-delay="0.5s" data-wow-duration="1.5s" data-wow-offset="10">
-                        <h6 class="uppercase">it’s you</h6>
-                        <h2 class="concept-caption">
-                            It's people with needs meeting people with skills. 
-                            <br>It's you.
-                        </h2>
-                        <a href="#" class="btn btn-info btn-rounded btn-lg">Start Now</a>
+            </section>
+            <section class="concepts">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-4 col-md-5 wow fadeInLeft" data-wow-delay="0.5s" data-wow-duration="1.5s" data-wow-offset="10">
+                            <img src="images/about-ecolulu-img-02.png" class="iphone-img" alt="">
+                        </div>
+                        <div class="col-sm-8 col-md-7 wow fadeInRight" data-wow-delay="0.5s" data-wow-duration="1.5s" data-wow-offset="10">
+                            <h6 class="uppercase">find help</h6>
+                            <h2 class="concept-caption">
+                                It's having a need and finding someone to fill it.
+                            </h2>
+                            <p>
+                                Professional help is expensive and often out of reach on a budget. What if there were non-professional but skilled people out there willing to do your job for less? You get a great deal and they get the experience they need to make that job a career!
+                            </p>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
+            <section class="concepts">
+                <div class="container">
+                    <div class="row reverse">
+                        <div class="col-sm-4 col-md-6 wow fadeInRight" data-wow-delay="0.5s" data-wow-duration="1.5s" data-wow-offset="10">
+                            <img src="images/about-ecolulu-img-03.png" class="iphone-img" alt="">
+                        </div>
+                        <div class="col-sm-8 col-md-6 wow fadeInLeft" data-wow-delay="0.5s" data-wow-duration="1.5s" data-wow-offset="10">
+                            <h6 class="uppercase">realize your dream</h6>
+                            <h2 class="concept-caption">
+                                It's building up your skills and helping realize your dream.
+                            </h2>
+                            <p>
+                                Get connected with people looking for someone like you. Negotiate your own rates, choose what services you offer, and pick the schedule that suits you and them. With each completed job, you'll improve your skills, have real experience, and be better prepared to reach your career goals.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="concepts">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-4 col-md-6 wow fadeInRight" data-wow-delay="0.5s" data-wow-duration="1.5s" data-wow-offset="10">
+                            <img src="images/about-ecolulu-img-04.png" class="iphone-img" alt="">
+                        </div>
+                        <div class="col-sm-8 col-md-6 wow fadeInLeft" data-wow-delay="0.5s" data-wow-duration="1.5s" data-wow-offset="10">
+                            <h6 class="uppercase">it’s you</h6>
+                            <h2 class="concept-caption">
+                                It's people with needs meeting people with skills. 
+                                <br>It's you.
+                            </h2>
+                            <a href="#" class="btn btn-info btn-rounded btn-lg">Start Now</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-        <!--Explore Our Services-->
-        <section class="section-title services">
-            <div class="container">
-                <div class="row">
-                    <h6 class="uppercase">What you can find here</h6>
-                    <h2>Explore the Services</h2>
+            <!--Explore Our Services-->
+            <section class="section-title services">
+                <div class="container">
+                    <div class="row">
+                        <h6 class="uppercase">What you can find here</h6>
+                        <h2>Explore the Services</h2>
+                    </div>
                 </div>
-            </div>
-        </section>
-        <section class="services">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-4 wow fadeInLeft" data-wow-duration="1.5s" data-wow-offset="10" data-wow-delay="0.5s">
-                        <div class="service-icon">
-                            <i class="fa fa-cutlery"></i>
+            </section>
+            <section class="services">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-4 wow fadeInLeft" data-wow-duration="1.5s" data-wow-offset="10" data-wow-delay="0.5s">
+                            <div class="service-icon">
+                                <i class="fa fa-cutlery"></i>
+                            </div>
+                            <h2>Make a meal</h2>
+                            <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies</p>
+                            <p><a class="btn btn-link" href="#" role="button">View details &raquo;</a></p>
                         </div>
-                        <h2>Make a meal</h2>
-                        <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies</p>
-                        <p><a class="btn btn-link" href="#" role="button">View details &raquo;</a></p>
-                    </div>
-                    <div class="col-sm-4 wow fadeInLeft" data-wow-duration="1.5s" data-wow-offset="10" data-wow-delay="0.7s">
-                        <div class="service-icon">
-                            <i class="fa fa-camera-retro"></i>
+                        <div class="col-sm-4 wow fadeInLeft" data-wow-duration="1.5s" data-wow-offset="10" data-wow-delay="0.7s">
+                            <div class="service-icon">
+                                <i class="fa fa-camera-retro"></i>
+                            </div>
+                            <h2>Capture a moment</h2>
+                            <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies</p>
+                            <p><a class="btn btn-link" href="#" role="button">View details &raquo;</a></p>
                         </div>
-                        <h2>Capture a moment</h2>
-                        <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies</p>
-                        <p><a class="btn btn-link" href="#" role="button">View details &raquo;</a></p>
-                    </div>
-                    <div class="col-sm-4 wow fadeInLeft" data-wow-duration="1.5s" data-wow-offset="10" data-wow-delay="0.9s">
-                        <div class="service-icon">
-                            <i class="fa fa-recycle"></i>
+                        <div class="col-sm-4 wow fadeInLeft" data-wow-duration="1.5s" data-wow-offset="10" data-wow-delay="0.9s">
+                            <div class="service-icon">
+                                <i class="fa fa-recycle"></i>
+                            </div>
+                            <h2>Recycle your stuff</h2>
+                            <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies</p>
+                            <p><a class="btn btn-link" href="#" role="button">View details &raquo;</a></p>
                         </div>
-                        <h2>Recycle your stuff</h2>
-                        <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies</p>
-                        <p><a class="btn btn-link" href="#" role="button">View details &raquo;</a></p>
+                        <a href="#" class="btn btn-primary btn-rounded btn-lg">And So Much More...</a>
                     </div>
-                    <a href="#" class="btn btn-primary btn-rounded btn-lg">And So Much More...</a>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <!--Testimonial-->
-        <section class="testimonial">
-            <div class="overlay"></div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-12 wow fadeInUp" data-wow-delay="0.5s" data-wow-duration="1.5s" data-wow-offset="10">
-                        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-                            <ol class="carousel-indicators">
-                                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-                            </ol>
-                            <div class="carousel-inner" role="listbox">
-                                <div class="item active">
-                                    <div class="row">
-                                        <div class="col-sm-6 col-sm-offset-3">
-                                            <p class="text-white">“Aenean posuere, tortor sed cursus feugiat, nunc augue blandit nunc, eu sollicitudin urna dolor sagittis lacus. Donec elit libero, sodales nec, volutpat a, suscipit non, turpis. Nullam sagittis. Suspendisse pulvinar, augue ac venenatis condimentum, sem libero volutpat nibh, nec pellentesque velit pede quis nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Fusce id purus. Ut varius tincidunt libero.”</p>
-                                            <div class="reviewer">
-                                                <div class="avartar" id="avartar1"></div>
-                                                <div>David, App Manager</div>
+            <!--Testimonial-->
+            <section class="testimonial">
+                <div class="overlay"></div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12 wow fadeInUp" data-wow-delay="0.5s" data-wow-duration="1.5s" data-wow-offset="10">
+                            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                                <ol class="carousel-indicators">
+                                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                                    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                                </ol>
+                                <div class="carousel-inner" role="listbox">
+                                    <div class="item active">
+                                        <div class="row">
+                                            <div class="col-sm-6 col-sm-offset-3">
+                                                <p class="text-white">“Aenean posuere, tortor sed cursus feugiat, nunc augue blandit nunc, eu sollicitudin urna dolor sagittis lacus. Donec elit libero, sodales nec, volutpat a, suscipit non, turpis. Nullam sagittis. Suspendisse pulvinar, augue ac venenatis condimentum, sem libero volutpat nibh, nec pellentesque velit pede quis nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Fusce id purus. Ut varius tincidunt libero.”</p>
+                                                <div class="reviewer">
+                                                    <div class="avartar" id="avartar1"></div>
+                                                    <div>David, App Manager</div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="item">
-                                    <div class="row">
-                                        <div class="col-sm-6 col-sm-offset-3">
-                                            <p class="text-white">“Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.”</p>
-                                            <div class="reviewer">
-                                                <div class="avartar" id="avartar2"></div>
-                                                <div>Sandra, Director</div>
+                                    <div class="item">
+                                        <div class="row">
+                                            <div class="col-sm-6 col-sm-offset-3">
+                                                <p class="text-white">“Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.”</p>
+                                                <div class="reviewer">
+                                                    <div class="avartar" id="avartar2"></div>
+                                                    <div>Sandra, Director</div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="item">
-                                    <div class="row">
-                                        <div class="col-sm-6 col-sm-offset-3">
-                                            <p class="text-white">“Curabitur ligula sapien, tincidunt non, euismod vitae, posuere imperdiet, leo. Maecenas malesuada. Praesent congue erat at massa. Sed cursus turpis vitae tortor. Donec posuere vulputate arcu. Phasellus accumsan cursus velit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed aliquam, nisi quis porttitor congue, elit erat euismod orci, ac placerat dolor lectus quis orci. Phasellus consectetuer vestibulum elit.”</p>
-                                            <div class="reviewer">
-                                                <div class="avartar" id="avartar3"></div>
-                                                <div>Amily, UI Designer</div>
+                                    <div class="item">
+                                        <div class="row">
+                                            <div class="col-sm-6 col-sm-offset-3">
+                                                <p class="text-white">“Curabitur ligula sapien, tincidunt non, euismod vitae, posuere imperdiet, leo. Maecenas malesuada. Praesent congue erat at massa. Sed cursus turpis vitae tortor. Donec posuere vulputate arcu. Phasellus accumsan cursus velit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed aliquam, nisi quis porttitor congue, elit erat euismod orci, ac placerat dolor lectus quis orci. Phasellus consectetuer vestibulum elit.”</p>
+                                                <div class="reviewer">
+                                                    <div class="avartar" id="avartar3"></div>
+                                                    <div>Amily, UI Designer</div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>    
-            </div>
-        </section>
-        
-        <footer>
-            <div class="container">
-                <div class="footer-top">
-                    <div class="languages-selector">
-                        <div class="selector-wrapper">
-                            <select name="#" id="#" class="select2 form-control">
-                                <option value="en">English</option>
-                                <option value="fr">Français</option>
-                                <option value="es">Español</option>
-                                <option value="it">Italiano</option>      
-                                <option value="zh">中文 (简体)</option>
-                                <option value="zh-TW">中文 (繁體)</option>
-                                <option value="ja">日本語</option>
-                                <option value="ko">한국어</option>
-                            </select>
+                    </div>    
+                </div>
+            </section>
+            
+            <footer>
+                <div class="container">
+                    <div class="footer-top">
+                        <div class="languages-selector">
+                            <div class="selector-wrapper">
+                                <select name="#" id="#" class="select2 form-control">
+                                    <option value="en">English</option>
+                                    <option value="fr">Français</option>
+                                    <option value="es">Español</option>
+                                    <option value="it">Italiano</option>      
+                                    <option value="zh">中文 (简体)</option>
+                                    <option value="zh-TW">中文 (繁體)</option>
+                                    <option value="ja">日本語</option>
+                                    <option value="ko">한국어</option>
+                                </select>
+                            </div>
                         </div>
+                        <div class="footer-links">
+                            <ul class="list-inline">
+                                <li><a href="#">Trust & Safety</a></li>
+                                <li><a href="#">Help</a></li>
+                                <li><a href="#">Careers</a></li>
+                                <li><a href="#">Press</a></li>
+                                <li><a href="#">Blog</a></li>
+                            </ul>
+                        </div>                    
                     </div>
-                    <div class="footer-links">
-                        <ul class="list-inline">
-                            <li><a href="#">Trust & Safety</a></li>
-                            <li><a href="#">Help</a></li>
-                            <li><a href="#">Careers</a></li>
-                            <li><a href="#">Press</a></li>
-                            <li><a href="#">Blog</a></li>
-                        </ul>
-                    </div>                    
+                    <div class="footer-bottom">
+                        <div class="social-links">
+                            <ul class="list-inline">
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                <li><a href="#"><i class="fa fa-youtube-play"></i></a></li>
+                                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-links">
+                            <ul class="list-inline">
+                                <li><a href="#">Policies</a></li>
+                                <li><a href="#">Terms & Privacy</a></li>
+                            </ul>
+                        </div>
+                        <p class="text-center no-s">
+                            Copyright &copy; 2016 ecolulu. All Rights Reserved.
+                        </p>                    
+                    </div>
                 </div>
-                <div class="footer-bottom">
-                    <div class="social-links">
-                        <ul class="list-inline">
-                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                            <li><a href="#"><i class="fa fa-youtube-play"></i></a></li>
-                            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-links">
-                        <ul class="list-inline">
-                            <li><a href="#">Policies</a></li>
-                            <li><a href="#">Terms & Privacy</a></li>
-                        </ul>
-                    </div>
-                    <p class="text-center no-s">
-                        Copyright &copy; 2016 ecolulu. All Rights Reserved.
-                    </p>                    
-                </div>
-            </div>
-        </footer>
-        
+            </footer>
+
+        </div>
+
+        <div class="page-mask" id="page-mask"></div>
+            
         <!-- Javascripts -->
         <script src="plugins/jquery/jquery-2.1.4.min.js"></script>
         <script src="plugins/jquery-ui/jquery-ui.min.js"></script>

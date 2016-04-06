@@ -1,0 +1,38 @@
+/* Services */
+.services {
+    margin: 20px auto;
+
+    &.section-title {
+        color: $white;
+        background: $azure-radiance;
+    }
+
+    .col-sm-4 {
+        margin-bottom: 20px;
+        cursor: pointer;
+
+        .btn {
+            padding: 0;
+            color: $azure-radiance;
+        }
+    }
+
+    .btn-primary {
+        width: 220px;
+    }
+}
+
+.service-icon {
+    margin: 0 auto;   
+    color: $azure-radiance;
+    border: 2px solid $azure-radiance;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    @include transition(all 0.3s ease-in-out);
+
+    .services .col-sm-4:hover & {
+        background: $azure-radiance;
+        color: $white;
+    }
+}
