@@ -1,0 +1,36 @@
+/* Buttons */
+.btn {
+    border: 1px solid transparent;
+    border-radius: 0;
+    outline: none!important;
+}
+
+.btn-rounded {
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 50px;
+}
+
+.btn-default {
+    @include btn-base($white, $mine-shaft, $mercury);
+}
+
+.btn-primary {
+    @include btn-base($azure-radiance, $white);
+}
+
+.btn-success {
+    @include btn-base($green, $white);
+}
+
+.btn-danger {
+    @include btn-base($red-orange, $white);
+}
+
+.btn-info {
+    @include btn-base($pizazz, $white);
+}
+
+.btn-warning {
+    @include btn-base($supernova, $white);
+}

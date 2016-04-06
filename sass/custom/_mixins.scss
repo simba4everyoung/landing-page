@@ -1,0 +1,106 @@
+//Basic button style (background color, text color, border color, hover color)
+@mixin btn-base($bg-color, $color, $border:transparent) {
+	background-color: $bg-color;
+    color: $color;
+    border: 1px solid $border;
+
+    &:hover,
+    &:focus,
+    &:active,
+    &.active {
+        background-color: darken($bg-color, 5%);
+        border: 1px solid $border;
+    }
+}
+
+//Transition
+@mixin transition($args...) {
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  -ms-transition: $args;
+  -o-transition: $args;
+  transition: $args;
+}
+
+//Box box-shadow
+@mixin box-shadow($shadow...) {
+	-webkit-box-shadow: $shadow;
+	-moz-box-shadow: $shadow;
+  -ms-box-shadow: $shadow;
+  -o-box-shadow: $shadow;
+	box-shadow: $shadow;
+}
+
+//Transform
+@mixin transform($arg) {
+  @-webkit-transform: $arg;
+  @-ms-transform: $arg;
+  @-o-transform: $arg;
+  transform: $arg;
+}
+
+//Keyframes
+@mixin keyframes($animation-name) {
+  @-webkit-keyframes #{$animation-name} {
+    @content;
+  }
+  @-moz-keyframes #{$animation-name} {
+    @content;
+  }
+  @-ms-keyframes #{$animation-name} {
+    @content;
+  }
+  @-o-keyframes #{$animation-name} {
+    @content;
+  }
+  @keyframes #{$animation-name} {
+    @content;
+  }
+}
+
+//Animation
+@mixin animation($arg...) {
+  -webkit-animation: $arg;
+  -moz-animation: $arg;
+  -ms-animation: $arg;
+  -o-animation: $arg;
+  animation: $arg;
+}
+
+//Flexbox
+@mixin flex {
+  display: -webkit-flex;  /*safari*/
+  display: flex;
+}
+
+@mixin flex-inline {
+  display: -webkit-inline-flex; /*safari*/
+  display: inline-flex;
+}
+
+@mixin flex-direction($arg) {
+  -webkit-flex-direction: $arg;
+  flex-direction: $arg;
+}
+
+@mixin flex-wrap($arg) {
+  -webkit-flex-wrap: $arg;
+  flex-wrap: $arg;
+}
+
+@mixin align-items($arg) {      
+  -webkit-align-items: $arg;
+  align-items: $arg;
+}
+
+@mixin justify-content($arg) {
+  -webkit-justify-content: $arg;
+  justify-content: $arg;
+}
+
+//turn off select field apperance
+@mixin appearance($arg) {
+  -webkit-appearance: $arg;
+  -moz-appearance: $arg;
+  appearance: $arg;
+}
