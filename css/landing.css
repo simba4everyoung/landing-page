@@ -537,35 +537,37 @@ ol.linenums {
       width: 300px;
       background-color: #005ab4;
       overflow: hidden;
-      opacity: 0.9;
-      -webkit-border-bottom-right-radius: 5px;
-      border-bottom-right-radius: 5px;
-      -webkit-border-bottom-left-radius: 5px;
-      border-bottom-left-radius: 5px;
-      background-clip: padding-box;
       -webkit-box-shadow: 0px 1px 3px 0px rgba(51, 51, 51, 0.2);
       -moz-box-shadow: 0px 1px 3px 0px rgba(51, 51, 51, 0.2);
       -ms-box-shadow: 0px 1px 3px 0px rgba(51, 51, 51, 0.2);
       -o-box-shadow: 0px 1px 3px 0px rgba(51, 51, 51, 0.2);
       box-shadow: 0px 1px 3px 0px rgba(51, 51, 51, 0.2); } }
-  @media only screen and (max-width: 768px) {
-    .navbar-collapse ul li {
-      border-bottom: #fff 1px solid; }
-      .navbar-collapse ul li:last-child {
-        border-bottom: none; } }
-  .navbar-collapse ul li a {
-    color: #fff;
-    background: transparent;
-    padding: 15px; }
-    .whiteHeader .navbar-collapse ul li a {
-      color: #5f5f5f; }
-      @media only screen and (max-width: 768px) {
-        .whiteHeader .navbar-collapse ul li a {
-          color: #fff;
-          font-size: 18px;
-          text-align: right; } }
-    .navbar-collapse ul li a:hover, .navbar-collapse ul li a:focus, .navbar-collapse ul li a:active {
-      border-left: solid 2px #22baa0; }
+  .navbar-collapse.in {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    max-height: 100vh;
+    margin: 0; }
+  .navbar-collapse ul {
+    margin: 0; }
+    .navbar-collapse ul li a {
+      color: #fff;
+      background: transparent; }
+      .whiteHeader .navbar-collapse ul li a {
+        color: #5f5f5f; }
+        @media only screen and (max-width: 768px) {
+          .whiteHeader .navbar-collapse ul li a {
+            color: #fff;
+            font-size: 18px;
+            text-align: right;
+            padding: 20px 0;
+            margin: 0 20px;
+            border-bottom: #fff 1px solid; }
+            .whiteHeader .navbar-collapse ul li a:first-child {
+              border-top: #fff 1px solid; } }
+      .navbar-collapse ul li a:hover, .navbar-collapse ul li a:focus, .navbar-collapse ul li a:active {
+        border-left: solid 2px #22baa0; }
 
 @media only screen and (min-width: 768px) {
   .navbar-nav {
@@ -654,6 +656,17 @@ footer {
         background: #333; }
         footer .social-links ul li i {
           color: #fff; }
+
+.page-mask {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 0; }
+  .page-mask.active {
+    width: 100%;
+    background-color: #333;
+    opacity: 0.7; }
 
 /* Home */
 .home {

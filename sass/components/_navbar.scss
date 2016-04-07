@@ -55,38 +55,56 @@
         width: 300px;
         background-color: $endeavour;
         overflow: hidden;
-        opacity: 0.9;
-        @include border-bottom-radius(5px);
+        // @include border-bottom-radius(5px);
         @include box-shadow(0px 1px 3px 0px rgba($mine-shaft, 0.2));
     }
 
-    ul li {
-        @include respond-max(768px) {
-            border-bottom: $white 1px solid;
+    &.in {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        max-height: 100vh;
+        margin: 0;
+    }
 
-            &:last-child {
-                border-bottom: none;
+    ul {
+        margin: 0;
+
+        li {
+            @include respond-max(768px) {
+                // border-bottom: $white 1px solid;
+
+                // &:last-child {
+                //     border-bottom: none;
+                // }
             }
-        }
 
-        a {
-            color: $white;
-            background: transparent;
-            padding: 15px;
+            a {
+                color: $white;
+                background: transparent;
 
-            .whiteHeader & {
-                color: $scorpion;
-                @include respond-max(768px) {
-                    color: $white;
-                    font-size: 18px;
-                    text-align: right;
+                .whiteHeader & {
+                    color: $scorpion;
+                    @include respond-max(768px) {
+                        color: $white;
+                        font-size: 18px;
+                        text-align: right;
+                        padding: 20px 0;
+                        margin: 0 20px;
+                        border-bottom: $white 1px solid;
+
+                        &:first-child {
+                            border-top: $white 1px solid;
+                        }
+                    }
                 }
-            }
 
-            &:hover,
-            &:focus,
-            &:active {
-                border-left: solid 2px $mountain-meadow;
+                &:hover,
+                &:focus,
+                &:active {
+                    border-left: solid 2px $mountain-meadow;
+                }
             }
         }
     }
