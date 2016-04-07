@@ -26,7 +26,7 @@ $( document ).ready(function() {
         
         if (scroll >= 60) {
             $(".navbar").addClass("whiteHeader");
-        } else {
+        } else if (!$('.navbar-collapse').hasClass('in')) {
             $(".navbar").removeClass("whiteHeader");
         }
     });
@@ -34,6 +34,19 @@ $( document ).ready(function() {
     // Tabs
     [].slice.call( document.querySelectorAll( '.tabs' ) ).forEach( function( el ) {
         new CBPFWTabs( el );
+    });
+
+    //---------------Header Navigation Toggle Menu--------------- 
+    $('.navbar-toggle').click(function(){
+        var scroll = $(window).scrollTop();
+
+        if (scroll <= 60) {
+            if(!$('.navbar').hasClass('whiteHeader')) {
+                $('.navbar').addClass('whiteHeader');
+            } else {
+                $('.navbar').removeClass('whiteHeader');
+            }
+        }    
     });
     
 });

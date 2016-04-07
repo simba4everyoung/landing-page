@@ -3,11 +3,14 @@
     color: $white;
 
     &.whiteHeader {
-        background: $white;
-        @include box-shadow(0px 1px 8px 0px rgba($mine-shaft, 0.2));
+        background: transparent;
         @include transition(all 0.3s ease-in-out);
         
         .navbar-header {
+            position: relative;
+            background: $white;
+            @include box-shadow(0px 2px 8px 0px rgba($mine-shaft, 0.2));
+
             button {
                 color: $scorpion;
             }
@@ -18,12 +21,19 @@
         @include flex;
         @include align-items(center);
         padding: 10px 0;
+        @include respond-max(768px) {
+            // @include flex-direction(row-reverse);
+        }
 
         .navbar-brand {
             text-decoration: none;
             color: $white;
             @include flex;
             @include align-items(center);
+            // @include respond-max(768px) {
+            //     margin-right: 50%;
+            //     @include transform(translateX(50%));
+            // }
             
             img {
                 height: 30px;
@@ -31,15 +41,34 @@
         }
         button {
             margin-left: auto;
+            // margin-right: auto;
             color: $white;
         }
     }    
 }
 
-#navbar {
+.navbar-collapse {
     padding: 15px 0 10px 0;
+    @include respond-max(768px) {
+        padding: 0;
+        float: right;
+        width: 300px;
+        background-color: $endeavour;
+        overflow: hidden;
+        opacity: 0.9;
+        @include border-bottom-radius(5px);
+        @include box-shadow(0px 1px 3px 0px rgba($mine-shaft, 0.2));
+    }
 
     ul li {
+        @include respond-max(768px) {
+            border-bottom: $white 1px solid;
+
+            &:last-child {
+                border-bottom: none;
+            }
+        }
+
         a {
             color: $white;
             background: transparent;
@@ -47,10 +76,11 @@
 
             .whiteHeader & {
                 color: $scorpion;
-            }
-
-            @include respond-max(767px) {
-                color: $scorpion;
+                @include respond-max(768px) {
+                    color: $white;
+                    font-size: 18px;
+                    text-align: right;
+                }
             }
 
             &:hover,
@@ -60,16 +90,12 @@
             }
         }
     }
-
-    @include respond-max(767px) {
-        background: $white;
-        @include box-shadow(0px 1px 8px 0px rgba($mine-shaft, 0.2));
-    }
 }
 
-
 @include respond-min(768px) {
-    .navbar-nav{ 
+    .navbar-nav{
+        margin: 0;
+
         & > li > a {
             padding-top: 20px;
             padding-bottom: 20px;
