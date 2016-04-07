@@ -1,0 +1,22 @@
+{
+	"name": "Ecolulu",
+	"version": "0.0.1",
+	"author": "Simba Xu",
+	"private": true,
+	"devDependencies" : {
+        	"grunt" :                   	"~0.4.5",
+                "matchdep" :                    "*",
+                "grunt-contrib-connect":        "*",
+                "grunt-contrib-cssmin":         "*",
+                "grunt-contrib-sass":           "*",
+                "grunt-contrib-uglify":         "*",
+                "grunt-contrib-concat":         "*",
+                "grunt-contrib-watch":          "*",
+                "grunt-svgstore":               "*",
+                "grunt-svginjector":            "*",
+                "matchdep":                     "*",
+                "grunt-tinypng":                "*",
+                "grunt-contrib-copy":           "*",
+                "grunt-contrib-jshint":         "*"
+	}
+}
