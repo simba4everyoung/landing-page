@@ -18,10 +18,6 @@
         @include flex;
         @include align-items(center);
         padding: 10px 0;
-        @include tablet {
-            width: 100%;
-            margin: 0;
-        }
 
         .navbar-brand {
             text-decoration: none;
@@ -36,18 +32,6 @@
         button {
             margin-left: auto;
             color: $white;
-            display: none;
-            background: none;
-            border: none;
-
-            @include tablet {
-                display: block;
-                position: relative;
-                float: right;
-                padding: 9px 10px;
-                margin-top: 8px;
-                margin-bottom: 8px;
-            }
         }
     }    
 }
@@ -65,27 +49,26 @@
                 color: $scorpion;
             }
 
-            @include tablet {
+            @include respond-max(767px) {
                 color: $scorpion;
             }
 
             &:hover,
             &:focus,
             &:active {
-                border-bottom: solid 2px $mountain-meadow;
+                border-left: solid 2px $mountain-meadow;
             }
         }
     }
 
-    @include tablet {
-        display: none;
-        // background: $white;
-        // @include box-shadow(0px 1px 8px 0px rgba($mine-shaft, 0.2));
+    @include respond-max(767px) {
+        background: $white;
+        @include box-shadow(0px 1px 8px 0px rgba($mine-shaft, 0.2));
     }
 }
 
 
-@include desktop {
+@include respond-min(768px) {
     .navbar-nav{ 
         & > li > a {
             padding-top: 20px;
@@ -103,6 +86,4 @@
         }
     }
 }
-
-
 

@@ -39,11 +39,6 @@
   transform: $arg;
 }
 
-//Translate
-@mixin translate($x, $y) {
-  @include transform(translate($x, $y));
-}
-
 //Keyframes
 @mixin keyframes($animation-name) {
   @-webkit-keyframes #{$animation-name} {
@@ -108,10 +103,4 @@
   -webkit-appearance: $arg;
   -moz-appearance: $arg;
   appearance: $arg;
-}
-
-//Responsive SVG
-@mixin svg-size($width, $width-p: 1, $height-p: 1) {
-  width: $width;
-  padding-top: calc(#{$width} * #{$height-p} / #{$width-p});
 }
