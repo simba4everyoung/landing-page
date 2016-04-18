@@ -6,6 +6,7 @@
 	"devDependencies" : {
         	"grunt" :                   	"~0.4.5",
                 "matchdep" :                    "*",
+                "grunt-concat":                 "*",
                 "grunt-contrib-connect":        "*",
                 "grunt-contrib-cssmin":         "*",
                 "grunt-contrib-sass":           "*",

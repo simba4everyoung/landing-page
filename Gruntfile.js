@@ -30,7 +30,7 @@ module.exports = function(grunt) {
 
 		//Task - JSLint, JSHint
 		jshint: {
-			all: ['js/*.js']
+			all: 'js/functions/*.js'
 		},
 
 		//Task - Create SVG System
@@ -59,11 +59,19 @@ module.exports = function(grunt) {
 		svginjector: {
 			icons: {
 				files: {
-					'js/icons.js': ['images/assets.svg']
+					'js/functions/icons.js': ['images/assets.svg']
 				}
 			},
 			options: {
 				container: '#icon-container'
+			}
+		},
+
+		//Task - Merge Scripts
+		concat: {
+			myjs: {
+				src: 'js/functions/*.js',
+				dest: 'js/landing-main.js'
 			}
 		},
 
@@ -92,8 +100,8 @@ module.exports = function(grunt) {
 				tasks: ['sass']
 			},
 			js: {
-				files: ['js/*.js'],
-				tasks: ['jshint']
+				files: 'js/functions/*.js',
+				tasks: ['jshint', 'concat:myjs']
 			}
 		}
 

@@ -533,8 +533,8 @@ ol.linenums {
   @media only screen and (max-width: 768px) {
     .navbar-collapse.in {
       padding: 0;
-      background-color: black;
-      opacity: 0.9;
+      background-color: #fff;
+      opacity: 0.98;
       overflow: hidden;
       position: fixed;
       width: 100%;
@@ -545,33 +545,51 @@ ol.linenums {
       max-height: 100vh;
       margin: 0; }
       .whiteHeader .navbar-collapse.in ul li a {
-        color: #fff;
-        font-size: 17px;
+        color: #333;
+        font-size: 14px;
         text-align: left;
         padding: 20px 0;
         margin: 0 15%;
-        border-bottom: 1px solid #ccc; }
+        border-bottom: 1px solid #ccc;
+        text-transform: uppercase;
+        font-weight: bold; }
         .whiteHeader .navbar-collapse.in ul li a:hover, .whiteHeader .navbar-collapse.in ul li a:focus, .whiteHeader .navbar-collapse.in ul li a:active {
           background: none;
           padding-left: 10px;
           color: #18C100;
           transition: ease-in 0.3s; }
+      .navbar-collapse.in ul li:last-child a {
+        text-align: center;
+        width: 200px;
+        border: 1px solid #333;
+        border-radius: 50px;
+        margin-top: 30px;
+        padding: 15px; } }
+    @media only screen and (max-width: 768px) and (max-width: 425px) {
+      .navbar-collapse.in ul li:last-child a {
+        margin: 30px auto 0; } }
+  @media only screen and (max-width: 768px) {
       .navbar-collapse.in .navbar-collapse-close {
         display: block;
-        margin: 0 15%;
+        margin: 38px 15% 0;
         text-align: right;
         padding: 20px 0 10px;
         cursor: pointer;
-        font-size: 17px; }
+        font-size: 14px;
+        color: #333;
+        text-transform: uppercase;
+        font-weight: bold; }
         .navbar-collapse.in .navbar-collapse-close:hover, .navbar-collapse.in .navbar-collapse-close:focus, .navbar-collapse.in .navbar-collapse-close:active {
           font-size: 18px;
           color: #18C100;
           transition: ease-in 0.3s; }
-        .navbar-collapse.in .navbar-collapse-close .icon-cross {
-          width: 25px;
-          padding-top: 25px; }
-          .navbar-collapse.in .navbar-collapse-close .icon-cross .icon {
-            fill: #fff; } }
+        .navbar-collapse.in .navbar-collapse-close .icon-close {
+          width: 14px;
+          padding-top: 14px;
+          top: 2px;
+          margin-left: 3px; }
+          .navbar-collapse.in .navbar-collapse-close .icon-close .icon {
+            fill: #333; } }
   .navbar-collapse ul {
     margin: 0; }
     .navbar-collapse ul li a {
