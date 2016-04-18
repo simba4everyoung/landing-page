@@ -13,6 +13,13 @@
     }
 }
 
+// @mixin box-sizing($box='border-box'){
+@mixin box-sizing($box){
+  -webkit-box-sizing: $box;
+  -moz-box-sizing: $box;
+  box-sizing: $box;
+}
+
 //Transition
 @mixin transition($args...) {
   -webkit-transition: $args;

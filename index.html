@@ -34,6 +34,7 @@
     </head>
 
     <body data-spy="scroll" data-target="#header">
+        <div id="icon-container"></div>
 
         <!-- <div class="page-wrapper"> -->
             
@@ -48,6 +49,14 @@
                 </div>
                 <div class="page-mask"></div>
                 <div id="navbar" class="navbar-collapse collapse navbar-right">
+                    <div class="navbar-collapse-close">
+                        <span>Close</span>
+                        <span class="svg-container icon-cross">
+                            <svg class="icon">
+                                <use xlink:href="#icon-cross">
+                            </svg>
+                        </span> 
+                    </div>
                     
                     <ul class="nav navbar-nav">
                         <li><a href="#home">Home</a></li>
@@ -267,51 +276,66 @@
         </section>
         
         <footer>
-            <div class="container">
-                <div class="footer-top">
-                    <div class="languages-selector">
-                        <div class="selector-wrapper">
-                            <select name="#" id="#" class="select2 form-control">
-                                <option value="en">English</option>
-                                <option value="fr">Français</option>
-                                <option value="es">Español</option>
-                                <option value="it">Italiano</option>      
-                                <option value="zh">中文 (简体)</option>
-                                <option value="zh-TW">中文 (繁體)</option>
-                                <option value="ja">日本語</option>
-                                <option value="ko">한국어</option>
-                            </select>
-                        </div>
+            <div class="footer-top">
+                <div class="container">
+                    <div class="footer-logo">
+                        <a href="#"><img src="images/logo.png" alt="logo"></a>
                     </div>
-                    <div class="footer-links">
-                        <ul class="list-inline">
+                    <div class="footer-top-address">
+                        <p>
+                            000 Rideau Street<br>
+                            Ottawa, ON<br>
+                            Canada<br>
+                            K0A 0S0
+                        </p>
+                    </div>
+                    <div class="footer-top-links">
+                        <ul>
                             <li><a href="#">Trust & Safety</a></li>
                             <li><a href="#">Help</a></li>
                             <li><a href="#">Careers</a></li>
                             <li><a href="#">Press</a></li>
                             <li><a href="#">Blog</a></li>
                         </ul>
-                    </div>                    
-                </div>
-                <div class="footer-bottom">
-                    <div class="social-links">
-                        <ul class="list-inline">
-                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                            <li><a href="#"><i class="fa fa-youtube-play"></i></a></li>
-                            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                        </ul>
                     </div>
-                    <div class="footer-links">
+                    <div class="footer-top-column">
+                        <div class="languages-selector">
+                            <div class="selector-wrapper">
+                                <select name="#" id="#" class="select2 form-control">
+                                    <option value="en">English</option>
+                                    <option value="fr">Français</option>
+                                    <option value="es">Español</option>
+                                    <option value="it">Italiano</option>      
+                                    <option value="zh">中文 (简体)</option>
+                                    <option value="zh-TW">中文 (繁體)</option>
+                                    <option value="ja">日本語</option>
+                                    <option value="ko">한국어</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="social-links">
+                            <ul class="list-inline">
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                <li><a href="#"><i class="fa fa-youtube-play"></i></a></li>
+                                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                            </ul>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="container">
+                    <p class="copyright">
+                        Copyright &copy; 2016 ecolulu. All Rights Reserved.
+                    </p>
+                    <div class="footer-bottom-links">
                         <ul class="list-inline">
                             <li><a href="#">Policies</a></li>
                             <li><a href="#">Terms & Privacy</a></li>
                         </ul>
                     </div>
-                    <p class="text-center no-s">
-                        Copyright &copy; 2016 ecolulu. All Rights Reserved.
-                    </p>                    
                 </div>
             </div>
         </footer>

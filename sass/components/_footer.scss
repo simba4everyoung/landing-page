@@ -1,74 +1,245 @@
 /* Footer */
-
 footer {
-    padding: 20px;
-
-    .footer-top {
-    	@include flex;
-    	@include flex-direction(column);
-
-    .languages-selector {
-		margin-bottom: 15px;
-
-    	select {
-    		width: 300px;
-    		height: 46px;
-    		border-radius: 3px;
-    		@include appearance(none);
-    	}
-
-    	#down-arrow {
-    		display: inline-block;
-    		width: 10px;
-    		height: 10px;
-    		fill: $scorpion;
-    		position: relative;
-    		top: -35px;
-    		right: -130px;
-    	}
+    .container {
+        @include respond-max(992px) {
+            width: 100%;
+        }
+        @include respond-max(767px) {
+            margin: 0;
+        }
     }
 
+    .footer-top {
+        padding: 30px 0;
+        background: $mercury;
+        @include respond-max(767px) {
+            @include flex;
+            @include flex-direction(row-reverse);
+            padding: 10px 0 5px;
+        }
 
-    	.footer-links {
-	    	margin-bottom: 15px;
+        .footer-logo {
+            float: left;
+            width: 130px;
+            margin-top: 70px;
+            @include respond-max(767px) {
+                display: none;
+            }
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .footer-top-address {
+            float: left;
+            margin-top: 5px;
+            margin-left: 12%;
+            @include respond-max(1023px) {
+                margin-left: 4%;
+            }
+            @include respond-max(767px) {
+                display: none;
+            }
+
+            p {
+                font-size: 16px;
+                line-height: 1.8;
+            }
+        }
+
+    	.footer-top-links {
+            float: left;
+            margin-left: 8%;
+            @include respond-max(1023px) {
+                margin-left: 4%;
+            }
+            @include respond-max(767px) {
+                float: none;
+                margin: 0 0 20px;
+            }
 
 			ul {
-				@include flex;
-		    	@include flex-wrap(wrap);
-		    	@include justify-content(center);
+                margin: 0;
+                padding-left: 0;
 
 		    	li {
 		    		padding: 5px;
+                    list-style: none;
+                    text-align: left;
+                    font-size: 16px;
+                    margin-bottom: 5px;
+                    @include respond-max(767px) {
+                        text-align: center;
+                        margin-bottom: 0;
+                        border-bottom: 1px solid lightgray;
+                        padding: 15px;
+                    }
+
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
 
 		    		a {
-		    			//color: $mine-shaft;
-		    			color: $azure-radiance;
+		    			color: $river-bed;;
 		    		}
 		    	}
 			}
 	    }
+
+        .footer-top-column {
+            float: right;
+            @include respond-max(767px) {
+                float: none;
+            }
+        }
+
+        .languages-selector {
+            margin-top: 5px;
+            margin-bottom: 20px;
+            @include respond-max(767px) {
+                display: none;
+            }
+
+            .selector-wrapper {
+                position: relative;
+
+                &:after {
+                    content: "";
+                    display: block;
+                    position: absolute;
+                    height: 8px;
+                    width: 8px;
+                    top: 50%;
+                    margin-top: -9px;
+                    right: 15px;
+                    @include box-sizing(content-box);
+                    transform: rotate(-45deg);
+                    border-top: none;
+                    border-right: none;
+                    border-bottom: 4px solid #c6c8cc;
+                    border-left: 4px solid #c6c8cc;
+                    pointer-events:none;
+                }
+            }
+
+            select {
+                width: 300px;
+                height: 46px;
+                border-radius: 3px;
+                margin: 0 auto;
+                @include appearance(none);
+            }
+
+            #down-arrow {
+                display: inline-block;
+                width: 10px;
+                height: 10px;
+                fill: $scorpion;
+                position: relative;
+                top: -35px;
+                right: -130px;
+            }
+        }
+
+        .social-links {
+            width: 100%;
+            margin: 0 auto 15px;
+
+            ul {
+                margin-left: 0;
+
+                li {
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                    padding-top: 9px;
+                    background: $scorpion;
+                    margin-right: 20px;
+                    @include respond-max(350px) {
+                        margin-right: 15px;
+                    }
+
+                    &:last-child {
+                        margin-right: 0;
+                    }
+
+                    &:hover {
+                        background: $scorpion;
+                    }
+
+                    i {
+                        color: $white;
+                    }
+                }
+            }
+        }
     }
     
+    .footer-bottom {
+        clear: both;
+        padding: 20px 0;
+        background: $silver;
+        @include respond-max(767px) {
+            padding: 0;
+        }
 
-    .social-links {
-    	width: 300px;
-    	margin-bottom: 15px;
+        &:after {
+            clear: both;
+            content: '';
+            display: block;
+        }
 
-    	ul {
-    		@include flex;
-	    	@include justify-content(space-between);
+        .container {
+            @include respond-max(767px) {
+                @include flex;
+                @include flex-direction(column-reverse);
+                padding: 0;
+            }
+        }
+        
+        .copyright {
+            float: left;
+            margin-top: 10px;
+            font-size: 16px;
+            color: $river-bed;
+            @include respond-max(767px) {
+                float: none;
+                text-align: center;
+                padding: 10px;
+            }
+        }
 
-	    	li {
-	    		width: 40px;
-	    		height: 40px;
-	    		border-radius: 50%;
-	    		padding-top: 9px;
-	    		background: $mine-shaft;
+        .footer-bottom-links {
+            float: right;
+            @include respond-max(767px) {
+                float: none;
+                background: $mercury;
+                padding: 0 15px;
+            }
 
-	    		i {
-					color: $white;
-	    		}
-	    	}
-    	}
+            ul {
+                margin: 10px 0 0;
+                @include respond-max(767px) {
+                    margin: 0;
+                }
+
+                li {
+                    margin-left: 20px;
+                    @include respond-max(767px) {
+                        display: block;
+                        border-top: 1px solid lightgray;
+                        padding: 15px;
+                        margin-left: 0;
+                    }
+
+                    a {
+                        color: $river-bed;
+                    }
+                }
+            }
+        }
+
     }
+    
 }
