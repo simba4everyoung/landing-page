@@ -30,13 +30,15 @@ $( document ).ready(function() {
         var target = this.hash;
         var $target = $(target);
 
-        if ($target.length) {
-            var scrollTo = $target.offset().top;
+        if ($(target).length) {
+            var scrollTo = $(target).offset().top;
 
             $('html, body').stop().animate({
                 'scrollTop': scrollTo
             }, 1000, 'easeInOutExpo');
+        
         }
+        
     });
     
     $(window).scroll(function() {    
@@ -56,11 +58,13 @@ $( document ).ready(function() {
 
     //---------------Header Navigation Toggle Menu--------------- 
     $('.navbar-mobile-toggle').click(function(){
-        $('.navbar-mobile').addClass('opened');    
+        $('.navbar-mobile').addClass('opened');
+        $('body').css('position', 'fixed');    
     });
 
     $('.navbar-collapse-close').click(function(){
         $('.navbar-mobile').removeClass('opened');
+        $('body').css('position', 'relative');
     });
 
     //----------------- FOOTER - GENERATE CURRENT YEAR ---------------

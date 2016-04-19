@@ -2,6 +2,7 @@
 html {
     height: 100%!important;
     position: relative;
+    z-index: -1;
 }
 
 body {
@@ -10,6 +11,7 @@ body {
     width: 100%;
     color: $river-bed;
     overflow-x: hidden;
+    z-index: -1;
 }
 
 p {
@@ -28,5 +30,12 @@ a {
 section {
     padding-top: 20px;
     padding-bottom: 20px;
+}
+
+
+.container {
+    @include respond-min-max(769px, 992px) {
+        width: 769px !important;
+    }
 }
 
