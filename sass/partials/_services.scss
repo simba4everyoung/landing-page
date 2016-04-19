@@ -1,19 +1,35 @@
 /* Services */
 .services {
     margin: 0 auto 20px;
+    @include respond-max(768px) {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    @include respond-max(425px) {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
 
     &.section-title {
         color: $white;
         background: $azure-radiance;
     }
 
+    h2 {
+        @include respond-max(425px) {
+            font-size: 28px;
+            margin-bottom: 15px;
+        }
+    }
+
     .col-sm-4 {
-        margin-bottom: 20px;
+        margin-bottom: 25px;
         cursor: pointer;
 
         .btn {
             padding: 0;
             color: $azure-radiance;
+            text-transform: uppercase;
         }
     }
 
@@ -30,9 +46,23 @@
     width: 100px;
     height: 100px;
     @include transition(all 0.3s ease-in-out);
+    @include respond-max(768px) {
+        width: 75px;
+        height: 75px;
+    }
 
     .services .col-sm-4:hover & {
         background: $azure-radiance;
         color: $white;
+    }
+}
+
+.icon-arrow-right {
+    width: 13px;
+    padding-top: 13px;
+    top: 1px;
+
+    .icon {
+        fill: $azure-radiance;
     }
 }

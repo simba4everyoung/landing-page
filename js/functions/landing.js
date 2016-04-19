@@ -40,20 +40,12 @@ $( document ).ready(function() {
     });
 
     //---------------Header Navigation Toggle Menu--------------- 
-    $('.navbar-toggle').click(function(){
-        var scroll = $(window).scrollTop();
-
-        if (scroll <= 60) {
-            if(!$('.navbar').hasClass('whiteHeader')) {
-                $('.navbar').addClass('whiteHeader');
-            } else {
-                $('.navbar').removeClass('whiteHeader');
-            }
-        }    
+    $('.navbar-mobile-toggle').click(function(){
+        $('.navbar-mobile').addClass('opened');    
     });
 
     $('.navbar-collapse-close').click(function(){
-        $('.navbar-collapse').removeClass('in');
+        $('.navbar-mobile').removeClass('opened');
     });
 
     //----------------- FOOTER - GENERATE CURRENT YEAR ---------------

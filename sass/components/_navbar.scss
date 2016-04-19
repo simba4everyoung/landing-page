@@ -21,19 +21,13 @@
         @include flex;
         @include align-items(center);
         padding: 10px 0;
-        @include respond-max(768px) {
-            // @include flex-direction(row-reverse);
-        }
 
         .navbar-brand {
             text-decoration: none;
             color: $white;
             @include flex;
             @include align-items(center);
-            // @include respond-max(768px) {
-            //     margin-right: 50%;
-            //     @include transform(translateX(50%));
-            // }
+            margin-left: 5px;
             
             img {
                 height: 30px;
@@ -41,17 +35,26 @@
         }
         button {
             margin-left: auto;
-            // margin-right: auto;
+            margin-right: 10px;
             color: $white;
+            background: transparent;
+            border: none;
+            @include respond-min(769px) {
+                display: none;
+            }
         }
     }    
 }
 
-.navbar-collapse {
-    padding: 15px 0 10px 0;
+.navbar-mobile {
+    padding: 10px 0;
+    @include respond-max(768px) {
+        display: none;
+    }
 
-    &.in {
+    &.opened {
         @include respond-max(768px) {
+            display: block;
             padding: 0;
             background-color: $white;  
             opacity: 0.98;
@@ -68,24 +71,28 @@
             ul {
                 li {
                     a {
-                        .whiteHeader & {
-                            color: $mine-shaft;
-                            font-size: 14px;
-                            text-align: left;
-                            padding: 20px 0;
-                            margin: 0 15%;
-                            border-bottom: 1px solid $silver;
-                            text-transform: uppercase;
-                            font-weight: bold;
+                        color: $mine-shaft;
+                        font-size: 14px;
+                        text-align: left;
+                        padding: 20px 0;
+                        margin: 0 15%;
+                        border-bottom: 1px solid $silver;
+                        text-transform: uppercase;
+                        font-weight: bold;
 
-                            &:hover,
-                            &:focus,
-                            &:active {
-                                background: none;
-                                padding-left: 10px;
-                                color: $green;
-                                transition: ease-in 0.3s;
-                            }
+                        &:hover,
+                        &:focus,
+                        &:active {
+                            background: none;
+                            padding-left: 10px;
+                            color: $green;
+                            transition: ease-in 0.3s;
+                        }
+                    }
+
+                    &:first-child {
+                        a {
+                            border-top: 1px solid $silver
                         }
                     }
 
@@ -100,6 +107,12 @@
                         @include respond-max(425px) {
                             margin: 30px auto 0;
                         }
+
+                        &:hover,
+                        &:focus,
+                        &:active {
+                            border-color: $green;
+                        }
                       }  
                     }
                 }
@@ -107,7 +120,7 @@
 
             .navbar-collapse-close {
                 display: block;
-                margin: 38px 15% 0;
+                margin: 20px 15% 20px;
                 text-align: right;
                 padding: 20px 0 10px;
                 cursor: pointer;
@@ -115,14 +128,6 @@
                 color: $mine-shaft;
                 text-transform: uppercase;
                 font-weight: bold;
-
-                &:hover,
-                &:focus,
-                &:active {
-                    font-size: 18px;
-                    color: $green;
-                    transition: ease-in 0.3s;
-                }
 
                 .icon-close {
                     width: 14px;
@@ -134,12 +139,28 @@
                         fill: $mine-shaft;
                     }
                 }
+
+                &:hover,
+                &:focus,
+                &:active {
+                    color: $green;
+                    transition: ease-in 0.3s;
+
+                    .icon-close .icon {
+                        fill: $green;
+                        transition: ease-in 0.3s;
+                    }
+                }
             }
         }
     }
 
     ul {
         margin: 0;
+        @include respond-min(769px) {
+            float: right;
+        }
+        
 
         li {
             a {
@@ -153,7 +174,7 @@
                 &:hover,
                 &:focus,
                 &:active {
-                    border-bottom: solid 2px $mountain-meadow;
+                    border-bottom: solid 1px $green;
                 }
             }
         }
@@ -164,7 +185,7 @@
     }
 }
 
-@include respond-min(768px) {
+@include respond-min(769px) {
     .navbar-nav{
         margin: 0;
 

@@ -1,4 +1,14 @@
 .concepts {
+	@include respond-min(769px) {
+		padding: 40px 0;
+	}
+	@include respond-max(768px) {
+		padding: 40px 40px;
+	}
+	@include respond-max(425px) {
+		padding: 40px 0;
+	}
+
 	&:nth-child(2n+1) {
 		background: $seashell;
 	}
@@ -55,11 +65,5 @@
 	.btn {
 		width: 220px;
 	}
-
-	@include respond-min(768px) {
-		& {
-			padding: 40px 0;
-		}
-	}	
 }
 
