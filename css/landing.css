@@ -889,7 +889,8 @@ footer .footer-bottom {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  z-index: -2; }
+  z-index: -2;
+  overflow: hidden; }
 
 .overlay {
   position: absolute;

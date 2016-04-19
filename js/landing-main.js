@@ -41,8 +41,10 @@ $( document ).ready(function() {
         
     });
     
+    var scroll;
+
     $(window).scroll(function() {    
-        var scroll = $(window).scrollTop();
+        scroll = $(window).scrollTop();
         
         if (scroll >= 60) {
             $(".navbar").addClass("whiteHeader");
@@ -57,6 +59,8 @@ $( document ).ready(function() {
     });
 
     //---------------Header Navigation Toggle Menu--------------- 
+    
+    
     $('.navbar-mobile-toggle').click(function(){
         $('.navbar-mobile').addClass('opened');
         $('body').css('position', 'fixed');    
@@ -70,5 +74,19 @@ $( document ).ready(function() {
     //----------------- FOOTER - GENERATE CURRENT YEAR ---------------
     var year = new Date().getFullYear();
     $('#current-year').text(year);
+
+    //----------------- HOME SECTION FULL PAGE BACKGROUND IMAGE -------------
+    var winWidth = $(window).width();
+    var winHeight = $(window).height();
+    var backgroundSize;
+
+    if (winWidth > winHeight) {
+        backgroundSize = winWidth + 'px auto'; 
+    } else {
+        backgroundSize = 'auto ' + winHeight + 'px';
+    }
+
+    $('.home').css('background-size', backgroundSize);
+
 });
 
