@@ -59,16 +59,20 @@ $( document ).ready(function() {
     });
 
     //---------------Header Navigation Toggle Menu--------------- 
-    
-    
+    var scrollMobMenu;
+
     $('.navbar-mobile-toggle').click(function(){
         $('.navbar-mobile').addClass('opened');
-        $('body').css('position', 'fixed');    
+        $('body').css('position', 'fixed'); 
+
+        scrollMobMenu = scroll;   
     });
 
     $('.navbar-collapse-close').click(function(){
         $('.navbar-mobile').removeClass('opened');
         $('body').css('position', 'relative');
+
+        $(window).offset({top: scrollMobMenu});
     });
 
     //----------------- FOOTER - GENERATE CURRENT YEAR ---------------
