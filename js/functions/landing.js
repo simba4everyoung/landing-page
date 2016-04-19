@@ -14,11 +14,14 @@ $( document ).ready(function() {
 
         var target = this.hash;
         var $target = $(target);
-        var scrollTo = $target.offset().top;
 
-        $('html, body').stop().animate({
-            'scrollTop': scrollTo
-        }, 1000, 'easeInOutExpo');
+        if ($target.length) {
+            var scrollTo = $target.offset().top;
+
+            $('html, body').stop().animate({
+                'scrollTop': scrollTo
+            }, 1000, 'easeInOutExpo');
+        }
     });
     
     $(window).scroll(function() {    
@@ -52,5 +55,9 @@ $( document ).ready(function() {
     $('.navbar-collapse-close').click(function(){
         $('.navbar-collapse').removeClass('in');
     });
+
+    //----------------- FOOTER - GENERATE CURRENT YEAR ---------------
+    var year = new Date().getFullYear();
+    $('#current-year').text(year);
 });
 
