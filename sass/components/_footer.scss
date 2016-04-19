@@ -81,7 +81,14 @@ footer {
                     }
 
 		    		a {
-		    			color: $river-bed;;
+		    			color: $river-bed;
+
+                        &:hover,
+                        &:focus,
+                        &:active {
+                            color: $green;
+                            text-decoration: none;
+                        }
 		    		}
 		    	}
 			}
@@ -164,8 +171,11 @@ footer {
                         margin-right: 0;
                     }
 
-                    &:hover {
-                        background: $scorpion;
+                    &:hover,
+                    &:focus,
+                    &:active {
+                        background: $mine-shaft;
+                        cursor: pointer;
                     }
 
                     i {
@@ -235,6 +245,13 @@ footer {
 
                     a {
                         color: $river-bed;
+
+                        &:hover,
+                        &:focus,
+                        &:active {
+                            color: $green;
+                            text-decoration: none;
+                        }
                     }
                 }
             }

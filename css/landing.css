@@ -622,22 +622,20 @@ ol.linenums {
       .whiteHeader .navbar-mobile ul li a {
         color: #5f5f5f; }
       .navbar-mobile ul li a:hover, .navbar-mobile ul li a:focus, .navbar-mobile ul li a:active {
-        border-bottom: solid 1px #18C100; }
+        background: transparent;
+        border-bottom: solid 2px #18C100;
+        color: #18C100; }
   .navbar-mobile .navbar-collapse-close {
     display: none; }
 
 @media only screen and (min-width: 769px) {
   .navbar-nav {
     margin: 0; }
-    .navbar-nav > li > a {
-      padding-top: 20px;
-      padding-bottom: 20px; }
-    .navbar-nav ul li.active a {
-      background: transparent;
-      border-top: 2px solid #22baa0;
-      padding-top: 18px; }
-      .navbar.whiteHeader .navbar-nav ul li.active a {
-        color: #333; } }
+    .navbar-nav > li {
+      padding: 0 15px; }
+      .navbar-nav > li > a {
+        padding: 20px 0; } }
+
 /* Footer */
 @media only screen and (max-width: 992px) {
   footer .container {
@@ -713,6 +711,9 @@ footer .footer-top {
           margin-bottom: 0; }
         footer .footer-top .footer-top-links ul li a {
           color: #4e5e6a; }
+          footer .footer-top .footer-top-links ul li a:hover, footer .footer-top .footer-top-links ul li a:focus, footer .footer-top .footer-top-links ul li a:active {
+            color: #18C100;
+            text-decoration: none; }
   footer .footer-top .footer-top-column {
     float: right; }
     @media only screen and (max-width: 767px) {
@@ -777,8 +778,9 @@ footer .footer-top {
             margin-right: 15px; } }
         footer .footer-top .social-links ul li:last-child {
           margin-right: 0; }
-        footer .footer-top .social-links ul li:hover {
-          background: #5f5f5f; }
+        footer .footer-top .social-links ul li:hover, footer .footer-top .social-links ul li:focus, footer .footer-top .social-links ul li:active {
+          background: #333;
+          cursor: pointer; }
         footer .footer-top .social-links ul li i {
           color: #fff; }
 footer .footer-bottom {
@@ -838,6 +840,9 @@ footer .footer-bottom {
             margin-left: 0; } }
         footer .footer-bottom .footer-bottom-links ul li a {
           color: #4e5e6a; }
+          footer .footer-bottom .footer-bottom-links ul li a:hover, footer .footer-bottom .footer-bottom-links ul li a:focus, footer .footer-bottom .footer-bottom-links ul li a:active {
+            color: #18C100;
+            text-decoration: none; }
 
 .page-mask {
   position: fixed;

@@ -174,7 +174,9 @@
                 &:hover,
                 &:focus,
                 &:active {
-                    border-bottom: solid 1px $green;
+                    background: transparent;
+                    border-bottom: solid 2px $green;
+                    color: $green;
                 }
             }
         }
@@ -185,22 +187,15 @@
     }
 }
 
-@include respond-min(769px) {
-    .navbar-nav{
+.navbar-nav {
+    @include respond-min(769px) {
         margin: 0;
 
-        & > li > a {
-            padding-top: 20px;
-            padding-bottom: 20px;
-        }
+        & > li {
+            padding: 0 15px;
 
-        ul li.active a {
-            background: transparent;
-            border-top: 2px solid $mountain-meadow;
-            padding-top: 18px;
-
-            .navbar.whiteHeader & {
-                color: $mine-shaft;
+            & > a {
+                padding: 20px 0;
             }
         }
     }
