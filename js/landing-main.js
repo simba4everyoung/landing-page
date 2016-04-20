@@ -72,7 +72,7 @@ $( document ).ready(function() {
         $('.navbar-mobile').removeClass('opened');
         $('body').css('position', 'relative');
 
-        $(window).offset({top: scrollMobMenu});
+        $(window).scrollTop(scrollMobMenu);
     });
 
     //----------------- FOOTER - GENERATE CURRENT YEAR ---------------
@@ -80,17 +80,28 @@ $( document ).ready(function() {
     $('#current-year').text(year);
 
     //----------------- HOME SECTION FULL PAGE BACKGROUND IMAGE -------------
+    
     var winWidth = $(window).width();
     var winHeight = $(window).height();
     var backgroundSize;
 
-    if (winWidth > winHeight) {
-        backgroundSize = winWidth + 'px auto'; 
-    } else {
-        backgroundSize = 'auto ' + winHeight + 'px';
+    bgSize();
+
+    $(window).resize(function(){
+        bgSize();
+    });
+
+    function bgSize(){
+        if (winWidth > winHeight) {
+            backgroundSize = winWidth + 'px auto'; 
+        } else {
+            backgroundSize = 'auto ' + winHeight + 'px';
+        }
+
+        $('.home').css('background-size', backgroundSize);
     }
 
-    $('.home').css('background-size', backgroundSize);
+    
 
 });
 

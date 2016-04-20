@@ -3,13 +3,19 @@
     width: 100%;
     height: 100%;
     position: relative;
-    background: url('../images/banner/7.jpg') no-repeat top center fixed;
+    background: url('../images/banner/7-large.jpg') no-repeat top center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     z-index: -2;
     overflow: hidden;
+    @include respond-max(768px) {
+        background: url('../images/banner/7-medium.jpg') no-repeat top center fixed;
+    }
+    @include respond-max(425px) {
+        background: url('../images/banner/7-small.jpg') no-repeat top center fixed;
+    }
 }
 
 .overlay {

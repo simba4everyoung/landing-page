@@ -1,10 +1,15 @@
 .testimonial {
     padding: 0;
-    background: url('../images/testimonials.jpg');
-    background-position: center 25%;
-    background-size: cover;
+    background: url('../images/testimonials-large.jpg') no-repeat center 25%;
+    background-size: cover !important;
     position: relative;
-    z-index: -2;   
+    z-index: -2;  
+    @include respond-max(768px) {
+        background: url('../images/testimonials-medium.jpg') no-repeat center 25%;
+    }
+    @include respond-max(425px) {
+        background: url('../images/testimonials-small.jpg') no-repeat center 25%;
+    }
 
     .carousel {
         padding: 50px 0 20px 0;
