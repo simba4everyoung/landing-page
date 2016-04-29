@@ -1,10 +1,8 @@
 //Font Pairs - Lato & Merriweather
 @import url(https://fonts.googleapis.com/css?family=Lato:400,300,700,900);
-@import url(https://fonts.googleapis.com/css?family=Merriweather:400,300,700);
 
 //Font Families
 $font-pri: "Lato", Helvetica, Arial, serif;
-$font-snd: "Merriweather", serif;
 
 //Font Weight
 $light: 300;
@@ -21,13 +19,13 @@ body {
 }
 
 h1 {
-    font-family: $font-snd;
+    font-family: $font-pri;
     font-size: 34px;
     font-weight: $bold;
 }
 
 h2 {
-    font-family: $font-snd;
+    font-family: $font-pri;
     font-size: 30px;
     font-weight: $bold;
 }
@@ -45,7 +43,7 @@ h4 {
 }
 
 h5 {
-    font-family: $font-snd;
+    font-family: $font-pri;
     font-size: 18px;
     font-weight: $normal;
 }

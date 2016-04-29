@@ -40,9 +40,9 @@
 
 //Transform
 @mixin transform($arg) {
-  @-webkit-transform: $arg;
-  @-ms-transform: $arg;
-  @-o-transform: $arg;
+  -webkit-transform: $arg;
+  -ms-transform: $arg;
+  -o-transform: $arg;
   transform: $arg;
 }
 

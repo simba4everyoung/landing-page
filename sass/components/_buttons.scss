@@ -17,21 +17,21 @@
 }
 
 .btn-primary {
-    @include btn-base($azure-radiance, $white);
+    @include btn-base($success-green, $white);
 }
 
 .btn-success {
-    @include btn-base($green, $white);
+    @include btn-base($info-blue, $white);
 }
 
 .btn-danger {
-    @include btn-base($red-orange, $white);
+    @include btn-base($danger-red, $white);
 }
 
 .btn-info {
-    @include btn-base($pizazz, $white);
+    @include btn-base($primary-purple, $white);
 }
 
 .btn-warning {
-    @include btn-base($supernova, $white);
+    @include btn-base($warning-orange, $white);
 }

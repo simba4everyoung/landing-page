@@ -12,18 +12,7 @@
         <meta name="author" content="Steelcoders" />
         
         <!-- Styles -->
-        
-        <link href="plugins/pace-master/themes/blue/pace-theme-flash.css" rel="stylesheet"/>
-        <link href="plugins/uniform/css/uniform.default.min.css" rel="stylesheet"/>
-        <link href="plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
-        <link href="plugins/fontawesome/css/font-awesome.css" rel="stylesheet" type="text/css"/>
-        <link href="plugins/animate/animate.css" rel="stylesheet" type="text/css">
-        <link href="plugins/tabstylesinspiration/css/tabs.css" rel="stylesheet" type="text/css">
-        <link href="plugins/tabstylesinspiration/css/tabstyles.css" rel="stylesheet" type="text/css">	
-        <link href="plugins/pricing-tables/css/style.css" rel="stylesheet" type="text/css">
         <link href="css/landing.css" rel="stylesheet" type="text/css"/>
-        
-        <script src="plugins/pricing-tables/js/modernizr.js"></script>
         
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -41,7 +30,13 @@
         <nav id="header" class="navbar navbar-fixed-top">
             <div class="container">
                 <div class="navbar-header">
-                    <a class="navbar-brand" href="#"><img src="images/logo.png" alt="logo"/></a>
+                    <a class="navbar-brand" href="#">
+                        <span class="svg-container icon-logo-smart">
+                            <svg class="icon">
+                                <use xlink:href="#icon-logo-smart">
+                            </svg>
+                        </span>
+                    </a>
                     <button type="button" class="navbar-mobile-toggle">      <!-- class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar" -->
                         <span class="sr-only">Toggle navigation</span>
                         <span class="fa fa-bars burger"></span>
@@ -59,7 +54,7 @@
                     </div>
                     
                     <ul class="nav navbar-nav">
-                        <li><a href="#home">Home</a></li>
+                        <li><a href="#home" class="active">Home</a></li>
                         <li><a href="#features">How it works</a></li>
                         <li><a href="#pricing">About</a></li>
                         <li><a href="#contact">Contact</a></li>
@@ -75,24 +70,24 @@
             <div class="container">
                 <div class="row">
                     <div class="home-text">
-                        <h1 class="wow fadeInDown" data-wow-delay="1.5s" data-wow-duration="1.5s" data-wow-offset="10">
+                        <h1>
                             Find your hero! Or be the hero!
                         </h1>
-                        <h3 class="lead wow fadeInDown" data-wow-delay="2s" data-wow-duration="1.5s" data-wow-offset="10">
+                        <h3>
                             Make a meal, capture a moment, recycle your stuff &amp; more and more...
                         </h3>
                         <div class="btn-container">
-                            <a href="#" target="_blank" class="btn btn-default btn-rounded btn-lg wow fadeInUp" id="btn-provider" data-wow-delay="2.5s" data-wow-duration="1.5s" data-wow-offset="10">
+                            <a href="#" target="_blank" class="btn btn-default btn-rounded btn-lg" id="btn-provider">
                             Become a Service Provider
                             </a>
-                            <a href="#" class="btn btn-primary btn-rounded btn-lg wow fadeInUp" data-wow-delay="2.5s" data-wow-duration="1.5s" data-wow-offset="10">
+                            <a href="#" class="btn btn-primary btn-rounded btn-lg">
                                 Sign In
                             </a>
                         </div>
                     </div>
                     <div class="scroller">
                         <h6>Learn More</h6>
-                        <i class="fa fa-angle-down wheel"></i>
+                        <i class="fa fa-angle-down"></i>
                         <!--div class="mouse"><div class="wheel"></div></div-->
                     </div>
                 </div>
@@ -112,10 +107,10 @@
         <section class="concepts">
             <div class="container">
                 <div class="row reverse">
-                    <div class="col-sm-4 col-md-5 wow fadeInRight" data-wow-delay="0.5s" data-wow-duration="1.5s" data-wow-offset="10">
+                    <div class="col-sm-4 col-md-5">
                         <img src="images/about-ecolulu-img-01.png" class="iphone-img" alt="">
                     </div>
-                    <div class="col-sm-8 col-md-7 wow fadeInLeft" data-wow-delay="0.5s" data-wow-duration="1.5s" data-wow-offset="10">
+                    <div class="col-sm-8 col-md-7">
                         <h6 class="uppercase">help others</h6>
                         <h2 class="concept-caption">
                             It's having a talent and putting it to good use.
@@ -130,10 +125,10 @@
         <section class="concepts">
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-4 col-md-5 wow fadeInLeft" data-wow-delay="0.5s" data-wow-duration="1.5s" data-wow-offset="10">
+                    <div class="col-sm-4 col-md-5">
                         <img src="images/about-ecolulu-img-02.png" class="iphone-img" alt="">
                     </div>
-                    <div class="col-sm-8 col-md-7 wow fadeInRight" data-wow-delay="0.5s" data-wow-duration="1.5s" data-wow-offset="10">
+                    <div class="col-sm-8 col-md-7">
                         <h6 class="uppercase">find help</h6>
                         <h2 class="concept-caption">
                             It's having a need and finding someone to fill it.
@@ -148,10 +143,10 @@
         <section class="concepts">
             <div class="container">
                 <div class="row reverse">
-                    <div class="col-sm-4 col-md-6 wow fadeInRight" data-wow-delay="0.5s" data-wow-duration="1.5s" data-wow-offset="10">
+                    <div class="col-sm-4 col-md-6">
                         <img src="images/about-ecolulu-img-03.png" class="iphone-img" alt="">
                     </div>
-                    <div class="col-sm-8 col-md-6 wow fadeInLeft" data-wow-delay="0.5s" data-wow-duration="1.5s" data-wow-offset="10">
+                    <div class="col-sm-8 col-md-6">
                         <h6 class="uppercase">realize your dream</h6>
                         <h2 class="concept-caption">
                             It's building up your skills and helping realize your dream.
@@ -166,10 +161,10 @@
         <section class="concepts">
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-4 col-md-6 wow fadeInRight" data-wow-delay="0.5s" data-wow-duration="1.5s" data-wow-offset="10">
+                    <div class="col-sm-4 col-md-6">
                         <img src="images/about-ecolulu-img-04.png" class="iphone-img" alt="">
                     </div>
-                    <div class="col-sm-8 col-md-6 wow fadeInLeft" data-wow-delay="0.5s" data-wow-duration="1.5s" data-wow-offset="10">
+                    <div class="col-sm-8 col-md-6">
                         <h6 class="uppercase">it’s you</h6>
                         <h2 class="concept-caption">
                             It's people with needs meeting people with skills. 
@@ -193,7 +188,7 @@
         <section class="services">
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-4 wow fadeInLeft" data-wow-duration="1.5s" data-wow-offset="10" data-wow-delay="0.5s">
+                    <div class="col-sm-4">
                         <div class="service-icon">
                             <i class="fa fa-cutlery"></i>
                         </div>
@@ -203,12 +198,12 @@
                             <a class="btn btn-link" href="#" role="button">View details</a>
                             <span class="svg-container icon-arrow-right">
                                 <svg class="icon">
-                                    <use xlink:href="#icon-arrow-right"
+                                    <use xlink:href="#icon-arrow-right">
                                 </svg>
                             </span>
                         </p>
                     </div>
-                    <div class="col-sm-4 wow fadeInLeft" data-wow-duration="1.5s" data-wow-offset="10" data-wow-delay="0.7s">
+                    <div class="col-sm-4">
                         <div class="service-icon">
                             <i class="fa fa-camera-retro"></i>
                         </div>
@@ -223,7 +218,7 @@
                             </span>
                         </p>
                     </div>
-                    <div class="col-sm-4 wow fadeInLeft" data-wow-duration="1.5s" data-wow-offset="10" data-wow-delay="0.9s">
+                    <div class="col-sm-4">
                         <div class="service-icon">
                             <i class="fa fa-recycle"></i>
                         </div>
@@ -248,7 +243,7 @@
             <div class="overlay"></div>
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-12 wow fadeInUp" data-wow-delay="0.5s" data-wow-duration="1.5s" data-wow-offset="10">
+                    <div class="col-sm-12">
                         <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
                             <ol class="carousel-indicators">
                                 <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
@@ -300,7 +295,13 @@
             <div class="footer-top">
                 <div class="container">
                     <div class="footer-logo">
-                        <a href="#"><img src="images/logo.png" alt="logo"></a>
+                        <a href="#">
+                            <span class="svg-container icon-logo-smart">
+                                <svg class="icon">
+                                    <use xlink:href="#icon-logo-smart">
+                                </svg>
+                            </span>
+                        </a>
                     </div>
                     <div class="footer-top-address">
                         <p>
@@ -364,15 +365,7 @@
         <!-- </div> -->
         
         <!-- Javascripts -->
-        <script src="plugins/jquery/jquery-2.1.4.min.js"></script>
-        <script src="plugins/jquery-ui/jquery-ui.min.js"></script>
-        <script src="plugins/pace-master/pace.min.js"></script>
-        <script src="plugins/bootstrap/js/bootstrap.min.js"></script>
-        <script src="plugins/jquery-slimscroll/jquery.slimscroll.min.js"></script>
-        <script src="plugins/uniform/jquery.uniform.min.js"></script>
-        <script src="plugins/wow/wow.min.js"></script>
-        <script src="plugins/tabstylesinspiration/js/cbpfwtabs.js"></script>
-        <script src="plugins/pricing-tables/js/main.js"></script>
+        <script src="js/landing-vendor.js"></script>
         <script src="js/landing-main.js"></script>
         
     </body>

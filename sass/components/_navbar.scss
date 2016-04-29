@@ -29,9 +29,10 @@
             @include align-items(center);
             margin-left: 5px;
             
-            img {
-                height: 30px;
-            }  
+            .icon-logo-smart {
+                width: 135px;
+                padding-top: 50px;
+            } 
         }
         button {
             margin-left: auto;
@@ -85,7 +86,7 @@
                         &:active {
                             background: none;
                             padding-left: 10px;
-                            color: $green;
+                            color: $info-blue;
                             transition: ease-in 0.3s;
                         }
                     }
@@ -111,7 +112,7 @@
                         &:hover,
                         &:focus,
                         &:active {
-                            border-color: $green;
+                            border-color: $info-blue;
                         }
                       }  
                     }
@@ -143,11 +144,11 @@
                 &:hover,
                 &:focus,
                 &:active {
-                    color: $green;
+                    color: $info-blue;
                     transition: ease-in 0.3s;
 
                     .icon-close .icon {
-                        fill: $green;
+                        fill: $info-blue;
                         transition: ease-in 0.3s;
                     }
                 }
@@ -159,6 +160,7 @@
         margin: 0;
         @include respond-min(769px) {
             float: right;
+            margin-top: 10px;
         }
         
 
@@ -166,6 +168,7 @@
             a {
                 color: $white;
                 background: transparent;
+                border-bottom: solid 2px transparent;
 
                 .whiteHeader & {
                     color: $scorpion;
@@ -173,10 +176,10 @@
 
                 &:hover,
                 &:focus,
-                &:active {
+                &:active,
+                &.active {
                     background: transparent;
-                    border-bottom: solid 2px $green;
-                    color: $green;
+                    border-bottom: solid 2px $info-blue;
                 }
             }
         }
@@ -195,7 +198,7 @@
             padding: 0 15px;
 
             & > a {
-                padding: 20px 0;
+                padding: 5px 0;
             }
         }
     }

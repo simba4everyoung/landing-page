@@ -12,7 +12,7 @@
 
     &.section-title {
         color: $white;
-        background: $azure-radiance;
+        background: $success-green;
     }
 
     h2 {
@@ -28,7 +28,7 @@
 
         .btn {
             padding: 0;
-            color: $azure-radiance;
+            color: $success-green;
             text-transform: uppercase;
         }
     }
@@ -40,8 +40,8 @@
 
 .service-icon {
     margin: 0 auto;   
-    color: $azure-radiance;
-    border: 2px solid $azure-radiance;
+    color: $success-green;
+    border: 2px solid $success-green;
     border-radius: 50%;
     width: 100px;
     height: 100px;
@@ -52,7 +52,7 @@
     }
 
     .services .col-sm-4:hover & {
-        background: $azure-radiance;
+        background: $success-green;
         color: $white;
     }
 }
@@ -63,6 +63,6 @@
     top: 1px;
 
     .icon {
-        fill: $azure-radiance;
+        fill: $success-green;
     }
 }

@@ -18,6 +18,7 @@
                 "matchdep":                     "*",
                 "grunt-tinypng":                "*",
                 "grunt-contrib-copy":           "*",
-                "grunt-contrib-jshint":         "*"
+                "grunt-contrib-jshint":         "*",
+                "grunt-uncss":                  "*"
 	}
 }

@@ -69,11 +69,43 @@ module.exports = function(grunt) {
 
 		//Task - Merge Scripts
 		concat: {
+			vendorJs: {
+				src: [
+					"plugins/jquery/jquery-2.1.4.min.js",
+		         	"plugins/jquery-ui/jquery-ui.min.js",
+		         	"plugins/bootstrap/js/bootstrap.min.js",
+		         	"plugins/jquery-slimscroll/jquery.slimscroll.min.js",
+		         	"plugins/uniform/jquery.uniform.min.js",
+		         	"plugins/wow/wow.min.js"
+			    ],
+			    dest: 'js/landing-vendor.js'
+			},
+			vendorCss: {
+				src: [
+					"plugins/uniform/css/uniform.default.min.css",
+        			"plugins/bootstrap/css/bootstrap.min.css",
+        			"plugins/fontawesome/css/font-awesome.css"
+
+				],
+				dest: 'sass/base/_vendor.scss'
+			},
 			myjs: {
 				src: 'js/functions/*.js',
 				dest: 'js/landing-main.js'
 			}
 		},
+
+		//Task - Remove Unused CSS Rules
+		// uncss: {
+		// 	options: {
+		// 		ignore: ['.navbar.whiteHeader', '.whiteHeader .navbar-mobile ul li a']
+		// 	},
+		// 	dist: {
+		// 		files: {
+		// 			'css/landing.css': 'index.html'
+		// 		}
+		// 	}
+		// },
 
 		//Grunt Watch
 		watch: {
@@ -88,7 +120,8 @@ module.exports = function(grunt) {
 				],
 				tasks: [
 					'svgstore',
-					'svginjector'
+					'svginjector',
+					'concat:myjs'
 				]
 
 			},
