@@ -8280,7 +8280,7 @@ section {
     .navbar .navbar-header button {
       margin-left: auto;
       margin-right: 10px;
-      color: #fff;
+      color: #5f5f5f;
       background: transparent;
       border: none; }
       @media only screen and (min-width: 769px) {
@@ -8366,7 +8366,7 @@ section {
         float: right;
         margin-top: 10px; } }
     .navbar-mobile ul li a {
-      color: #fff;
+      color: #5f5f5f;
       background: transparent;
       border-bottom: solid 2px transparent; }
       .whiteHeader .navbar-mobile ul li a {
@@ -8627,7 +8627,7 @@ footer .footer-bottom {
   width: 100%;
   height: 100%;
   position: relative;
-  background: url("../images/banner/7-large.jpg") no-repeat top center fixed;
+  background: url("../images/banner/banner-large.jpg") no-repeat top center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -8636,10 +8636,7 @@ footer .footer-bottom {
   overflow: hidden; }
   @media only screen and (max-width: 768px) {
     .home {
-      background: url("../images/banner/7-medium.jpg") no-repeat top center fixed; } }
-  @media only screen and (max-width: 425px) {
-    .home {
-      background: url("../images/banner/7-small.jpg") no-repeat top center fixed; } }
+      background: url("../images/banner/banner-medium.jpg") no-repeat top center fixed; } }
 
 .overlay {
   position: absolute;
@@ -8660,7 +8657,7 @@ footer .footer-bottom {
   -ms-transform: translateY(-50%);
   -o-transform: translateY(-50%);
   transform: translateY(-50%);
-  color: #fff; }
+  color: #5f5f5f; }
   @media only screen and (min-width: 769px) {
     .home-text {
       width: 380px; } }
@@ -8675,13 +8672,14 @@ footer .footer-bottom {
     .home-text h1:after {
       width: 80px;
       height: 2px;
-      background: #f1f1f1;
+      background: #ccc;
       margin: 15px auto;
       display: block;
       content: ' '; }
   .home-text h3 {
     margin: 0 auto 25px;
-    font-weight: 300; }
+    font-weight: 300;
+    line-height: 1.3; }
     @media only screen and (min-width: 1025px) {
       .home-text h3 {
         width: 780px; } }
@@ -8700,8 +8698,12 @@ footer .footer-bottom {
         .home-text .btn-container .btn:first-child {
           margin-right: 0;
           margin-bottom: 15px; } }
-    .home-text .btn-container .btn#btn-provider:hover, .home-text .btn-container .btn#btn-provider:focus, .home-text .btn-container .btn#btn-provider:active {
-      background: #b2b2b2; }
+    .home-text .btn-container .btn#btn-provider {
+      border-color: #5f5f5f; }
+      .home-text .btn-container .btn#btn-provider:hover, .home-text .btn-container .btn#btn-provider:focus, .home-text .btn-container .btn#btn-provider:active {
+        background: #b2b2b2;
+        color: #fff;
+        border-color: #b2b2b2; }
 
 .scroller {
   position: absolute;
@@ -8709,11 +8711,15 @@ footer .footer-bottom {
   left: 0;
   right: 0;
   margin: 0 auto;
-  color: #fff; }
+  color: #126456; }
   .scroller h6 {
-    margin-bottom: 0; }
+    margin-bottom: 0;
+    font-weight: bold;
+    font-size: 17px; }
 
 .wheel {
+  font-weight: bold;
+  font-size: 18px;
   -webkit-animation: mouse-wheel 1.2s ease infinite;
   -moz-animation: mouse-wheel 1.2s ease infinite;
   -ms-animation: mouse-wheel 1.2s ease infinite;
